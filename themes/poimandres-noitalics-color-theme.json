@@ -263,13 +263,13 @@
       "list.focusOutline": "#ffffff00",
       "list.invalidItemForeground": "#b89500",
       "list.warningForeground": "#fff8a1",
-      "listFilterWidget.background": "undefined",
+      "listFilterWidget.background": "#506477",
       "listFilterWidget.noMatchesOutline": "#e0678d",
       "listFilterWidget.outline": "#00000000",
       "menu.background": "#1b1e28",
       "menu.foreground": "#f0f0f0",
       "menu.selectionBackground": "#1b1e28",
-      "menu.selectionForeground": "undefined",
+      "menu.selectionForeground": "#7390AA",
       "menu.separatorBackground": "#bbbbbb",
       "menubar.selectionBackground": "#ffffff1a",
       "menubar.selectionForeground": "#797d96",
@@ -319,10 +319,10 @@
       "panelSectionHeader.background": "#80808033",
       "panelTitle.activeBorder": "#a6accd",
       "panelTitle.inactiveForeground": "#a6accd99",
-      "peekViewEditor.matchHighlightBackground": "undefined",
+      "peekViewEditor.matchHighlightBackground": "#506477",
       "peekViewResult.fileForeground": "#ffffff",
       "peekViewResult.lineForeground": "#bbbbbb",
-      "peekViewResult.matchHighlightBackground": "undefined",
+      "peekViewResult.matchHighlightBackground": "#506477",
       "peekViewResult.selectionBackground": "#3399ff33",
       "peekViewResult.selectionForeground": "#ffffff",
       "peekViewTitleLabel.foreground": "#ffffff",
@@ -358,7 +358,7 @@
       "settings.textInputForeground": "#e4f0fb",
       "sideBar.dropBackground": "#53595d80",
       "sideBarSectionHeader.foreground": "#797d96",
-      "statusBar.debuggingBackground": "undefined",
+      "statusBar.debuggingBackground": "#506477",
       "statusBar.debuggingForeground": "#797d96",
       "statusBar.noFolderForeground": "#797d96",
       "statusBarItem.activeBackground": "#ffffff2e",
@@ -756,7 +756,7 @@
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "undefined"
+          "foreground": "#7390AA"
         }
       },
       {
@@ -788,7 +788,7 @@
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "undefined"
+          "foreground": "#7390AA"
         }
       },
       {
@@ -830,14 +830,14 @@
       {
         "scope": ["markup.italic"],
         "settings": {
-          "foreground": "undefined",
+          "foreground": "#7390AA",
           "fontStyle": ""
         }
       },
       {
         "scope": ["markup.bold", "markup.bold string"],
         "settings": {
-          "foreground": "undefined",
+          "foreground": "#7390AA",
           "fontStyle": "bold"
         }
       },
@@ -851,14 +851,14 @@
           "markup.quote markup.bold string"
         ],
         "settings": {
-          "foreground": "undefined",
+          "foreground": "#7390AA",
           "fontStyle": "bold"
         }
       },
       {
         "scope": ["markup.underline"],
         "settings": {
-          "foreground": "undefined",
+          "foreground": "#7390AA",
           "fontStyle": "underline"
         }
       },
@@ -935,7 +935,7 @@
       {
         "scope": ["meta.separator"],
         "settings": {
-          "foreground": "undefined",
+          "foreground": "#7390AA",
           "fontStyle": "bold"
         }
       },
@@ -991,7 +991,7 @@
       {
         "scope": "markup.inline.raw.string.markdown",
         "settings": {
-          "foreground": "undefined"
+          "foreground": "#7390AA"
         }
       },
       {

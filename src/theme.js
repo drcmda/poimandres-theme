@@ -292,13 +292,13 @@ function schema({ colors, styles }) {
       "list.focusOutline": "${colors.white}00",
       "list.invalidItemForeground": "#b89500",
       "list.warningForeground": "${colors.brightYellow}",
-      "listFilterWidget.background": "${colors.blueishGray}",
+      "listFilterWidget.background": "${colors.bluishGray}",
       "listFilterWidget.noMatchesOutline": "${colors.hotRed}",
       "listFilterWidget.outline": "#00000000",
       "menu.background": "${colors.bg}",
       "menu.foreground": "#f0f0f0",
       "menu.selectionBackground": "${colors.bg}",
-      "menu.selectionForeground": "${colors.blueishGrayBrighter}",
+      "menu.selectionForeground": "${colors.bluishGrayBrighter}",
       "menu.separatorBackground": "#bbbbbb",
       "menubar.selectionBackground": "${colors.white}1a",
       "menubar.selectionForeground": "#797d96",
@@ -348,10 +348,10 @@ function schema({ colors, styles }) {
       "panelSectionHeader.background": "#80808033",
       "panelTitle.activeBorder": "${colors.gray}",
       "panelTitle.inactiveForeground": "${colors.gray}99",
-      "peekViewEditor.matchHighlightBackground": "${colors.blueishGray}",
+      "peekViewEditor.matchHighlightBackground": "${colors.bluishGray}",
       "peekViewResult.fileForeground": "${colors.white}",
       "peekViewResult.lineForeground": "#bbbbbb",
-      "peekViewResult.matchHighlightBackground": "${colors.blueishGray}",
+      "peekViewResult.matchHighlightBackground": "${colors.bluishGray}",
       "peekViewResult.selectionBackground": "#3399ff33",
       "peekViewResult.selectionForeground": "${colors.white}",
       "peekViewTitleLabel.foreground": "${colors.white}",
@@ -387,7 +387,7 @@ function schema({ colors, styles }) {
       "settings.textInputForeground": "${colors.offWhite}",
       "sideBar.dropBackground": "#53595d80",
       "sideBarSectionHeader.foreground": "#797d96",
-      "statusBar.debuggingBackground": "${colors.blueishGray}",
+      "statusBar.debuggingBackground": "${colors.bluishGray}",
       "statusBar.debuggingForeground": "#797d96",
       "statusBar.noFolderForeground": "#797d96",
       "statusBarItem.activeBackground": "${colors.white}2e",
@@ -785,7 +785,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}"
+          "foreground": "${colors.bluishGrayBrighter}"
         }
       },
       {
@@ -817,7 +817,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}"
+          "foreground": "${colors.bluishGrayBrighter}"
         }
       },
       {
@@ -859,14 +859,14 @@ function schema({ colors, styles }) {
       {
         "scope": ["markup.italic"],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}",
+          "foreground": "${colors.bluishGrayBrighter}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
       {
         "scope": ["markup.bold", "markup.bold string"],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}",
+          "foreground": "${colors.bluishGrayBrighter}",
           "fontStyle": "bold"
         }
       },
@@ -880,14 +880,14 @@ function schema({ colors, styles }) {
           "markup.quote markup.bold string"
         ],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}",
+          "foreground": "${colors.bluishGrayBrighter}",
           "fontStyle": "bold"
         }
       },
       {
         "scope": ["markup.underline"],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}",
+          "foreground": "${colors.bluishGrayBrighter}",
           "fontStyle": "underline"
         }
       },
@@ -964,7 +964,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["meta.separator"],
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}",
+          "foreground": "${colors.bluishGrayBrighter}",
           "fontStyle": "bold"
         }
       },
@@ -1020,7 +1020,7 @@ function schema({ colors, styles }) {
       {
         "scope": "markup.inline.raw.string.markdown",
         "settings": {
-          "foreground": "${colors.blueishGrayBrighter}"
+          "foreground": "${colors.bluishGrayBrighter}"
         }
       },
       {
