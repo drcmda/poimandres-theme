@@ -1,4 +1,4 @@
-![](assets/screencap.jpg)
+![](assets/screencap.png)
 
 Poimandres is a minimal, frameless dark-theme based on [blueberry](https://github.com/peymanslh/vscode-blueberry-dark-theme).
 
