@@ -1,21 +1,40 @@
 {
-    "name": "pmndrs",
-    "displayName": "poimandres",
-    "description": "poimandres dark theme",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.54.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "poimandres",
-                "uiTheme": "vs-dark",
-                "path": "./themes/poimandres-color-theme.json"
-            }
-        ]
-    }
+  "name": "pmndrs",
+  "icon": "icons/pmndrs.png",
+  "displayName": "poimandres",
+  "description": "poimandres dark theme",
+  "version": "0.0.1",
+  "keywords": [
+    "poimandres",
+    "pmndrs",
+    "vsc",
+    "dark",
+    "theme"
+  ],
+  "author": "Paul Henschel",
+  "publisher": "pmndrs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drcmda/poimandres-theme/issues"
+  },
+  "homepage": "https://github.com/drcmda/poimandres-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drcmda/poimandres-theme.git"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "poimandres",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme.json"
+      }
+    ]
+  }
 }
