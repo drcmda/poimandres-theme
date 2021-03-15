@@ -2,6 +2,8 @@
 
 A minimal, frameless dark theme based on [blueberry](https://github.com/peymanslh/vscode-blueberry-dark-theme).
 
+![](assets/jumbo.png)
+
 ![](assets/screencap.png)
 
 The screencap uses the following settings:
