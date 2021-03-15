@@ -58,7 +58,7 @@ function schema({ colors, styles }) {
       "editorHoverWidget.border": "${colors.white}10",
       "editorIndentGuide.background": "#4e557980",
       "editorLineNumber.foreground": "#3a3f58",
-      "editorLink.activeForeground": "${colors.gray}",
+      "editorLink.activeForeground": "${colors.lightBlue}",
       "editorSuggestWidget.background": "${colors.bg}",
       "editorSuggestWidget.border": "${colors.white}10",
       "editorSuggestWidget.foreground": "${colors.gray}",
@@ -132,8 +132,8 @@ function schema({ colors, styles }) {
       "terminal.ansiRed": "${colors.hotRed}",
       "terminal.ansiWhite": "${colors.white}",
       "terminal.ansiYellow": "${colors.brightYellow}",
-      "textLink.activeForeground": "${colors.gray}",
-      "textLink.foreground": "${colors.lowerMint}",
+      "textLink.activeForeground": "${colors.lightBlue}",
+      "textLink.foreground": "${colors.lightBlue}",
       "titleBar.activeBackground": "#191d28",
       "titleBar.activeForeground": "#797d96",
       "titleBar.inactiveBackground": "${colors.bg}",
@@ -169,18 +169,18 @@ function schema({ colors, styles }) {
       "debugConsole.sourceForeground": "${colors.gray}",
       "debugConsole.warningForeground": "${colors.brightYellow}",
       "debugConsoleInputIcon.foreground": "${colors.gray}",
-      "debugExceptionWidget.background": "#420b0d",
+      "debugExceptionWidget.background": "${colors.hotRed}",
       "debugExceptionWidget.border": "${colors.hotRed}",
       "debugIcon.breakpointCurrentStackframeForeground": "${colors.brightYellow}",
       "debugIcon.breakpointDisabledForeground": "#848484",
       "debugIcon.breakpointForeground": "${colors.hotRed}",
-      "debugIcon.breakpointStackframeForeground": "#89d185",
+      "debugIcon.breakpointStackframeForeground": "${colors.lowerMint}",
       "debugIcon.breakpointUnverifiedForeground": "#848484",
       "debugIcon.continueForeground": "${colors.lightBlue}",
       "debugIcon.disconnectForeground": "${colors.hotRed}",
       "debugIcon.pauseForeground": "${colors.lightBlue}",
-      "debugIcon.restartForeground": "#89d185",
-      "debugIcon.startForeground": "#89d185",
+      "debugIcon.restartForeground": "${colors.lowerMint}",
+      "debugIcon.startForeground": "${colors.lowerMint}",
       "debugIcon.stepBackForeground": "${colors.lightBlue}",
       "debugIcon.stepIntoForeground": "${colors.lightBlue}",
       "debugIcon.stepOutForeground": "${colors.lightBlue}",
@@ -189,11 +189,11 @@ function schema({ colors, styles }) {
       "debugTokenExpression.boolean": "${colors.lowerBlue}",
       "debugTokenExpression.error": "${colors.hotRed}",
       "debugTokenExpression.name": "${colors.pink}",
-      "debugTokenExpression.number": "#b5cea8",
-      "debugTokenExpression.string": "#ce9178",
+      "debugTokenExpression.number": "${colors.lowerMint}",
+      "debugTokenExpression.string": "${colors.lowerBlue}",
       "debugTokenExpression.value": "${colors.gray}99",
       "debugToolBar.background": "#333333",
-      "debugView.exceptionLabelBackground": "#6c2022",
+      "debugView.exceptionLabelBackground": "${colors.hotRed}",
       "debugView.exceptionLabelForeground": "${colors.gray}",
       "debugView.stateLabelBackground": "#88888844",
       "debugView.stateLabelForeground": "${colors.gray}",
@@ -219,12 +219,12 @@ function schema({ colors, styles }) {
       "editorError.foreground": "${colors.hotRed}",
       "editorGroup.dropBackground": "#53595d80",
       "editorGroupHeader.noTabsBackground": "${colors.bg}",
-      "editorGutter.addedBackground": "#587c0c",
+      "editorGutter.addedBackground": "${colors.lowerMint}",
       "editorGutter.background": "${colors.bg}",
       "editorGutter.commentRangeForeground": "#c5c5c5",
       "editorGutter.deletedBackground": "${colors.hotRed}",
       "editorGutter.foldingControlForeground": "#c5c5c5",
-      "editorGutter.modifiedBackground": "#0c7d9d",
+      "editorGutter.modifiedBackground": "${colors.lowerBlue}",
       "editorHint.foreground": "#eeeeeeb3",
       "editorHoverWidget.foreground": "${colors.gray}",
       "editorHoverWidget.statusBarBackground": "#202430",
@@ -239,7 +239,7 @@ function schema({ colors, styles }) {
       "editorMarkerNavigationError.background": "${colors.hotRed}",
       "editorMarkerNavigationInfo.background": "${colors.lightBlue}",
       "editorMarkerNavigationWarning.background": "${colors.brightYellow}",
-      "editorOverviewRuler.addedForeground": "#587c0c99",
+      "editorOverviewRuler.addedForeground": "${colors.lowerMint}99",
       "editorOverviewRuler.border": "#7f7f7f4d",
       "editorOverviewRuler.bracketMatchForeground": "#a0a0a0",
       "editorOverviewRuler.commonContentForeground": "#60606066",
@@ -249,7 +249,7 @@ function schema({ colors, styles }) {
       "editorOverviewRuler.findMatchForeground": "#d186167e",
       "editorOverviewRuler.incomingContentForeground": "#40a6ff80",
       "editorOverviewRuler.infoForeground": "${colors.lightBlue}",
-      "editorOverviewRuler.modifiedForeground": "#0c7d9d99",
+      "editorOverviewRuler.modifiedForeground": "${colors.lowerBlue}99",
       "editorOverviewRuler.rangeHighlightForeground": "#007acc99",
       "editorOverviewRuler.selectionHighlightForeground": "#a0a0a0cc",
       "editorOverviewRuler.warningForeground": "${colors.brightYellow}",
@@ -268,7 +268,7 @@ function schema({ colors, styles }) {
       "extensionButton.prominentForeground": "${colors.white}",
       "extensionIcon.starForeground": "${colors.brightYellow}",
       "foreground": "${colors.gray}",
-      "gitDecoration.addedResourceForeground": "#81b88b",
+      "gitDecoration.addedResourceForeground": "${colors.lowerMint}",
       "gitDecoration.conflictingResourceForeground": "${colors.hotRed}",
       "gitDecoration.deletedResourceForeground": "${colors.hotRed}",
       "gitDecoration.ignoredResourceForeground": "#40404a",
@@ -283,14 +283,14 @@ function schema({ colors, styles }) {
       "inputOption.activeBackground": "${colors.white}00",
       "inputOption.activeBorder": "#007acc00",
       "inputOption.activeForeground": "${colors.white}",
-      "inputValidation.errorBackground": "#5a1d1d",
+      "inputValidation.errorBackground": "${colors.hotRed}",
       "inputValidation.infoBackground": "#063b49",
       "inputValidation.warningBackground": "#352a05",
       "list.deemphasizedForeground": "#40404a",
       "list.dropBackground": "#062f4a",
       "list.filterMatchBackground": "${colors.lowerBlue}60",
       "list.focusOutline": "${colors.white}00",
-      "list.invalidItemForeground": "#b89500",
+      "list.invalidItemForeground": "${colors.brightYellow}",
       "list.warningForeground": "${colors.brightYellow}",
       "listFilterWidget.background": "${colors.bluishGray}",
       "listFilterWidget.noMatchesOutline": "${colors.hotRed}",
@@ -310,9 +310,9 @@ function schema({ colors, styles }) {
       "merge.incomingHeaderBackground": "#40a6ff80",
       "minimap.selectionHighlight": "#717cb450",
       "minimap.warningHighlight": "${colors.brightYellow}",
-      "minimapGutter.addedBackground": "#587c0c",
+      "minimapGutter.addedBackground": "${colors.lowerMint}",
       "minimapGutter.deletedBackground": "${colors.hotRed}",
-      "minimapGutter.modifiedBackground": "#0c7d9d",
+      "minimapGutter.modifiedBackground": "${colors.lowerBlue}",
       "minimapSlider.activeBackground": "${colors.brightMint}28",
       "minimapSlider.background": "#00000020",
       "minimapSlider.hoverBackground": "#00000028",
@@ -334,9 +334,9 @@ function schema({ colors, styles }) {
       "notebookScrollbarSlider.hoverBackground": "#00000050",
       "notebookStatusErrorIcon.foreground": "${colors.hotRed}",
       "notebookStatusRunningIcon.foreground": "${colors.gray}",
-      "notebookStatusSuccessIcon.foreground": "#89d185",
+      "notebookStatusSuccessIcon.foreground": "${colors.lowerMint}",
       "notificationCenterHeader.background": "#232734",
-      "notificationLink.foreground": "${colors.lowerMint}",
+      "notificationLink.foreground": "${colors.lightBlue}",
       "notifications.border": "#232734",
       "notificationsErrorIcon.foreground": "${colors.hotRed}",
       "notificationsInfoIcon.foreground": "${colors.lightBlue}",
@@ -378,7 +378,7 @@ function schema({ colors, styles }) {
       "settings.dropdownListBorder": "#454545",
       "settings.focusedRowBackground": "#80808024",
       "settings.headerForeground": "#e7e7e7",
-      "settings.modifiedItemIndicator": "#0c7d9d",
+      "settings.modifiedItemIndicator": "${colors.lowerBlue}",
       "settings.numberInputBackground": "${colors.white}05",
       "settings.numberInputBorder": "${colors.white}10",
       "settings.numberInputForeground": "${colors.offWhite}",
@@ -741,6 +741,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["*url*", "*link*", "*uri*"],
         "settings": {
+          "foreground": "${colors.lightBlue}",
           "fontStyle": "underline"
         }
       },
@@ -912,19 +913,19 @@ function schema({ colors, styles }) {
       {
         "scope": ["string.other.link.title.markdown"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.lightBlue}"
         }
       },
       {
         "scope": ["string.other.link.description.title.markdown"],
         "settings": {
-          "foreground": "${colors.blueishGreen}"
+          "foreground": "${colors.lightBlue}"
         }
       },
       {
         "scope": ["constant.other.reference.link.markdown"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.lightBlue}"
         }
       },
       {
@@ -1060,7 +1061,7 @@ function schema({ colors, styles }) {
           "meta.image.inline.markdown string.other.link.description.title.markdown"
         ],
         "settings": {
-          "foreground": "${colors.hotRed}",
+          "foreground": "${colors.lightBlue}",
           "fontStyle": ""
         }
       },
@@ -1071,7 +1072,7 @@ function schema({ colors, styles }) {
           "meta.link.reference.def.markdown markup.underline.link.markdown"
         ],
         "settings": {
-          "foreground": "${colors.brightMint}",
+          "foreground": "${colors.lightBlue}",
           "fontStyle": "underline"
         }
       },
