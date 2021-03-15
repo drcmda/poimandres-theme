@@ -34,6 +34,11 @@
         "label": "poimandres",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme.json"
+      },
+      {
+        "label": "poimandres-noitalics",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-noitalics-color-theme.json"
       }
     ]
   }

@@ -529,15 +529,13 @@
     {
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#506477",
-        "fontStyle": "italic"
+        "foreground": "#506477"
       }
     },
     {
       "scope": "meta.parameters comment.block",
       "settings": {
-        "foreground": "#42675A",
-        "fontStyle": " italic"
+        "foreground": "#42675A"
       }
     },
     {
@@ -572,9 +570,7 @@
     },
     {
       "scope": ["Keyword", "Storage"],
-      "settings": {
-        "fontStyle": "italic"
-      }
+      "settings": {}
     },
     {
       "scope": [
@@ -721,15 +717,13 @@
     {
       "scope": ["variable.language"],
       "settings": {
-        "foreground": "#91B4D5",
-        "fontStyle": "italic"
+        "foreground": "#91B4D5"
       }
     },
     {
       "scope": ["entity.name.method.js"],
       "settings": {
-        "foreground": "#91B4D5",
-        "fontStyle": "italic"
+        "foreground": "#91B4D5"
       }
     },
     {
@@ -741,15 +735,13 @@
     {
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#91B4D5",
-        "fontStyle": "italic"
+        "foreground": "#91B4D5"
       }
     },
     {
       "scope": ["text.html.basic entity.other.attribute-name.html", "text.html.basic entity.other.attribute-name"],
       "settings": {
-        "foreground": "#4FB391",
-        "fontStyle": "italic"
+        "foreground": "#4FB391"
       }
     },
     {
@@ -803,15 +795,13 @@
     {
       "scope": ["tag.decorator.js entity.name.tag.js", "tag.decorator.js punctuation.definition.tag.js"],
       "settings": {
-        "foreground": "#42675A",
-        "fontStyle": "italic"
+        "foreground": "#42675A"
       }
     },
     {
       "scope": ["source.js constant.other.object.key.js string.unquoted.label.js"],
       "settings": {
-        "foreground": "#4FB391",
-        "fontStyle": "italic"
+        "foreground": "#4FB391"
       }
     },
     {
@@ -915,8 +905,7 @@
     {
       "scope": ["markup.italic"],
       "settings": {
-        "foreground": "#7390AA",
-        "fontStyle": "italic"
+        "foreground": "#7390AA"
       }
     },
     {
@@ -949,9 +938,7 @@
     },
     {
       "scope": ["markup.strike"],
-      "settings": {
-        "fontStyle": "italic"
-      }
+      "settings": {}
     },
     {
       "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
@@ -961,9 +948,7 @@
     },
     {
       "scope": ["markup.quote"],
-      "settings": {
-        "fontStyle": "italic"
-      }
+      "settings": {}
     },
     {
       "scope": ["string.other.link.title.markdown"],
@@ -1093,9 +1078,7 @@
     },
     {
       "scope": "markup.italic.markdown",
-      "settings": {
-        "fontStyle": "italic"
-      }
+      "settings": {}
     },
     {
       "scope": [
