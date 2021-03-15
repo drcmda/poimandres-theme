@@ -11,6 +11,9 @@
     "dark",
     "theme"
   ],
+  "scripts": {
+    "build": "node src/theme"
+  },
   "author": "Paul Henschel",
   "publisher": "pmndrs",
   "license": "MIT",
