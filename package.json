@@ -1,0 +1,21 @@
+{
+    "name": "pmndrs",
+    "displayName": "poimandres",
+    "description": "poimandres dark theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "poimandres",
+                "uiTheme": "vs-dark",
+                "path": "./themes/poimandres-color-theme.json"
+            }
+        ]
+    }
+}
