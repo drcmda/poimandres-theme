@@ -1,23 +1,27 @@
 const italics = {
   colors: {
-    bg: '#1b1e28',
-    focus: '#303340',
-    selection: '#717cb418',
-    white: '#ffffff',
-    offWhite: '#e4f0fb',
-    gray: '#a6accd',
-    lightBlue: '#ADD7FF',
-    lowerBlue: '#89ddff',
-    desaturatedBlue: '#91B4D5',
+    brightYellow: '#fffac2',
     brightMint: '#5DE4B7',
     lowerMint: '#4fb391',
     blueishGreen: '#42675A',
-    bluishGray: '#506477',
+
+    lightBlue: '#ADD7FF',
+    lowerBlue: '#89ddff',
+    desaturatedBlue: '#91B4D5',
     bluishGrayBrighter: '#7390AA',
+
     hotRed: '#e0678d',
     pink: '#FCC5E9',
     brighterPink: '#FAE4FC',
-    brightYellow: '#fffac2',
+    gray: '#a6accd',
+
+    white: '#ffffff',
+    offWhite: '#e4f0fb',
+    bluishGray: '#506477',
+    focus: '#303340',
+    
+    bg: '#1b1e28',
+    selection: '#717cb418',
     transparent: '#00000000',
   },
   styles: {
