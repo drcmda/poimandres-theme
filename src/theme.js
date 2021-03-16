@@ -17,7 +17,7 @@ const italics = {
     pink: '#FCC5E9',
     brighterPink: '#FAE4FC',
     brightYellow: '#fff8a1',
-    transparent: '#00000000'
+    transparent: '#00000000',
   },
   styles: {
     fontStyle: 'italic',
@@ -1113,9 +1113,8 @@ function svg({ colors }) {
       cx="${((i % 4) + 1) * 10}"
       fill="${color}"
     />`
-
   return `
-  <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 44 ${Math.ceil((Object.keys(colors).length + 1) / 4) * 11}" xmlns="http://www.w3.org/2000/svg">
     ${Object.values(colors).map(circle).join('')}
   </svg>
   `
