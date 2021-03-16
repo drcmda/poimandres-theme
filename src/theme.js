@@ -1114,7 +1114,7 @@ function svg({ colors }) {
       fill="${color}"
     />`
   return `
-  <svg viewBox="0 0 44 ${Math.ceil((Object.keys(colors).length + 1) / 4) * 11}" xmlns="http://www.w3.org/2000/svg">
+  <svg width="200" height="250" viewBox="0 0 50 ${Math.ceil((Object.keys(colors).length + 1) / 4) * 12}" xmlns="http://www.w3.org/2000/svg">
     ${Object.values(colors).map(circle).join('')}
   </svg>
   `

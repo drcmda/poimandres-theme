@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "filewatcher": "^3.0.1"
+    "filewatcher": "^3.0.1",
+    "sharp": "^0.27.2"
   }
 }
