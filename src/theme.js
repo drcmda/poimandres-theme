@@ -1105,6 +1105,23 @@ function schema({ colors, styles }) {
   `
 }
 
+function svg({ colors }) {
+  const circle = (color, i) => `
+    <circle
+      r="4"
+      cy="${Math.ceil((i + 1) / 4) * 10}"
+      cx="${((i % 4) + 1) * 10}"
+      fill="${color}"
+    />`
+
+  return `
+  <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    ${Object.values(colors).map(circle).join('')}
+  </svg>
+  `
+}
+
 module.exports.schema = schema
 module.exports.italics = italics
 module.exports.noitalics = noitalics
+module.exports.svg = svg

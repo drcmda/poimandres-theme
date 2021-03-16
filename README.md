@@ -1,5 +1,5 @@
 <p align="middle">
-  <img src="assets/dots.png" />
+  <img src="assets/dots.svg" width="150" />
   <img src="assets/screencap.png" />
 </p>
 
@@ -27,5 +27,5 @@ The screencap above uses the following settings:
     cd poimandres-theme
     npm install
     npm run dev
-  
+
 Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js` will now be reflected when you save.
