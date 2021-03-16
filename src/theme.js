@@ -1104,3 +1104,7 @@ function schema({ colors, styles }) {
   }
   `
 }
+
+module.exports.schema = schema
+module.exports.italics = italics
+module.exports.noitalics = noitalics
