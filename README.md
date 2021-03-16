@@ -1,18 +1,12 @@
 ![](assets/screencap.png)
 
-Poimandres is a minimal, frameless dark-theme based on [blueberry](https://github.com/peymanslh/vscode-blueberry-dark-theme).
-
-The screencap uses the following settings:
-
-```json
-{
-  "workbench.colorTheme": "poimandres",
-  "workbench.iconTheme": "quill-icons-minimal",
-  "editor.renderIndentGuides": false,
-  "editor.renderWhitespace": "none",
-  "editor.minimap.renderCharacters": false,
-  "editor.fontSize": 13.5,
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-  "window.zoomLevel": 0.5,
-}
-```
+<p align="center">
+<sub>
+<samp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iconTheme | <a href="https://marketplace.visualstudio.com/items?itemName=cdonohue.quill-icons">quill-minimal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+renderIndentGuides | false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;renderWhitespace | none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontSize | 13.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fontFamily | Menlo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</samp>
+</sub>
+</p>
