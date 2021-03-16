@@ -12,7 +12,7 @@
     "theme"
   ],
   "scripts": {
-    "build": "node src/theme"
+    "dev": "node src/watcher"
   },
   "author": "Paul Henschel",
   "publisher": "pmndrs",
@@ -44,5 +44,8 @@
         "path": "./themes/poimandres-noitalics-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "filewatcher": "^3.0.1"
   }
 }

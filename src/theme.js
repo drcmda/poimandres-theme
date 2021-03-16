@@ -1,5 +1,3 @@
-fs = require('fs')
-
 const italics = {
   colors: {
     bg: '#1b1e28',
@@ -1104,6 +1102,3 @@ function schema({ colors, styles }) {
   }
   `
 }
-
-fs.writeFile('./themes/poimandres-color-theme.json', schema(italics), (err) => err && console.log(err))
-fs.writeFile('./themes/poimandres-noitalics-color-theme.json', schema(noitalics), (err) => err && console.log(err))
