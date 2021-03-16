@@ -6,11 +6,7 @@ function requireUncached(module) {
   return require(module)
 }
 
-const watcher = filewatcher()
-watcher.add('src/theme.js')
-
-watcher.on('change', function (file) {
-  console.log(`${file} modified`)
+function generateTheme() {
   const { italics, noitalics, schema, svg } = requireUncached('./theme')
 
   fs.writeFile('themes/poimandres-color-theme.json', schema(italics), (err) => err && console.log(err))
@@ -19,4 +15,14 @@ watcher.on('change', function (file) {
 
   fs.writeFile('assets/dots.svg', svg(italics), (err) => err && console.log(err))
   console.log('SVG written ...')
+}
+
+const watcher = filewatcher()
+watcher.add('src/theme.js')
+
+watcher.on('change', function (file) {
+  console.log(`${file} modified`)
+  generateTheme()
 })
+
+generateTheme()
