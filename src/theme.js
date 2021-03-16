@@ -240,7 +240,7 @@ function schema({ colors, styles }) {
       "editorMarkerNavigationInfo.background": "${colors.lightBlue}",
       "editorMarkerNavigationWarning.background": "${colors.brightYellow}",
       "editorOverviewRuler.addedForeground": "${colors.lowerMint}99",
-      "editorOverviewRuler.border": "${colors.transparent},
+      "editorOverviewRuler.border": "${colors.transparent}",
       "editorOverviewRuler.bracketMatchForeground": "#a0a0a0",
       "editorOverviewRuler.commonContentForeground": "#60606066",
       "editorOverviewRuler.currentContentForeground": "#40c8ae80",
