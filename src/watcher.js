@@ -11,7 +11,9 @@ function generateTheme() {
   const { italics, noitalics, schema, svg } = requireUncached('./theme')
   fs.writeFile('themes/poimandres-color-theme.json', schema(italics), (err) => err && console.log(err))
   fs.writeFile('themes/poimandres-noitalics-color-theme.json', schema(noitalics), (err) => err && console.log(err))
-  sharp(Buffer.from(svg(italics).trim())).png().toFile('assets/dots.png')
+  sharp(Buffer.from(svg(italics).trim()), { density: 400 })
+    .png()
+    .toFile('assets/dots.png')
   console.log('assets saved ...')
 }
 

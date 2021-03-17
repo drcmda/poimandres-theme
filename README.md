@@ -1,5 +1,5 @@
 <p align="middle">
-  <img src="assets/dots.png" />
+  <img src="assets/dots.png" width="200" />
   <img src="assets/screencap.png" />
 </p>
 
