@@ -456,6 +456,12 @@
         }
       },
       {
+        "scope": ["variable.other.object", "variable.other.constant.object"],
+        "settings": {
+          "foreground": "#FAE4FC"
+        }
+      },
+      {
         "scope": ["variable", "string constant.other.placeholder", "meta.object-literal.key"],
         "settings": {
           "foreground": "#ADD7FF"

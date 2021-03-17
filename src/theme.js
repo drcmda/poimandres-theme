@@ -491,6 +491,12 @@ function schema({ colors, styles }) {
         }
       },
       {
+        "scope": ["variable.other.object", "variable.other.constant.object"],
+        "settings": {
+          "foreground": "${colors.brighterPink}"
+        }
+      },
+      {
         "scope": ["variable", "string constant.other.placeholder", "meta.object-literal.key"],
         "settings": {
           "foreground": "${colors.lightBlue}"
