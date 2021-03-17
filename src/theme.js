@@ -5,8 +5,8 @@ const italics = {
     lowerMint: '#4fb391',
     blueishGreen: '#42675A',
 
-    lightBlue: '#ADD7FF',
     lowerBlue: '#89ddff',
+    lightBlue: '#ADD7FF',
     desaturatedBlue: '#91B4D5',
     bluishGrayBrighter: '#7390AA',
 
@@ -125,7 +125,7 @@ function schema({ colors, styles }) {
       "editorOverviewRuler.wordHighlightForeground": "#a0a0a0cc",
       "editorOverviewRuler.wordHighlightStrongForeground": "#c0a0c0cc",
       "editorPane.background": "${colors.bg}",
-      "editorRuler.foreground": "${colors.gray}",
+      "editorRuler.foreground": "${colors.offWhite}10",
       "editorUnnecessaryCode.opacity": "#000000aa",
       "editorWarning.foreground": "${colors.brightYellow}",
       "editorWhitespace.foreground": "#e3e4e229",
@@ -319,7 +319,7 @@ function schema({ colors, styles }) {
       "minimapGutter.deletedBackground": "${colors.hotRed}",
       "minimapGutter.modifiedBackground": "${colors.lowerBlue}",
       "minimapSlider.activeBackground": "${colors.gray}25",
-      "minimapSlider.background": "${colors.gray}25",
+      "minimapSlider.background": "${colors.gray}10",
       "minimapSlider.hoverBackground": "${colors.gray}25",
       "notebook.cellBorderColor": "${colors.bg}",
       "notebook.cellInsertionIndicator": "${colors.transparent}",
