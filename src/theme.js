@@ -89,12 +89,12 @@ function schema({ colors, styles }) {
       "editorError.foreground": "${colors.hotRed}",
       "editorGroup.dropBackground": "${colors.bluishGrayBrighter}80",
       "editorGroupHeader.noTabsBackground": "${colors.bg}",
-      "editorGutter.addedBackground": "${colors.lowerMint}",
       "editorGutter.background": "${colors.bg}",
       "editorGutter.commentRangeForeground": "${colors.gray}",
-      "editorGutter.deletedBackground": "${colors.hotRed}",
       "editorGutter.foldingControlForeground": "${colors.gray}",
-      "editorGutter.modifiedBackground": "${colors.lowerBlue}",
+      "editorGutter.addedBackground": "${colors.lowerMint}40",
+      "editorGutter.deletedBackground": "${colors.hotRed}40",
+      "editorGutter.modifiedBackground": "${colors.lightBlue}20",
       "editorHint.foreground": "${colors.bluishGrayBrighter}b3",
       "editorHoverWidget.foreground": "${colors.gray}",
       "editorHoverWidget.statusBarBackground": "#202430",
@@ -166,7 +166,7 @@ function schema({ colors, styles }) {
       "statusBar.foreground": "${colors.gray}",
       "statusBar.noFolderBackground": "${colors.bg}",
       "tab.activeBackground": "${colors.bg}",
-      "tab.activeForeground": "${colors.lightBlue}",
+      "tab.activeForeground": "${colors.offWhite}",
       "tab.border": "${colors.transparent}",
       "tab.inactiveBackground": "${colors.bg}",
       "tab.inactiveForeground": "${colors.darkerGray}",
@@ -266,10 +266,10 @@ function schema({ colors, styles }) {
       "gitDecoration.conflictingResourceForeground": "${colors.hotRed}",
       "gitDecoration.deletedResourceForeground": "${colors.hotRed}",
       "gitDecoration.ignoredResourceForeground": "${colors.darkerGray}50",
-      "gitDecoration.modifiedResourceForeground": "${colors.offWhite}",
+      "gitDecoration.modifiedResourceForeground": "${colors.lightBlue}",
       "gitDecoration.renamedResourceForeground": "${colors.brightMint}",
       "gitDecoration.stageDeletedResourceForeground": "${colors.hotRed}",
-      "gitDecoration.stageModifiedResourceForeground": "${colors.offWhite}",
+      "gitDecoration.stageModifiedResourceForeground": "${colors.lightBlue}",
       "gitDecoration.submoduleResourceForeground": "${colors.lowerBlue}",
       "gitDecoration.untrackedResourceForeground": "${colors.brightMint}",
       "icon.foreground": "${colors.gray}",
@@ -290,7 +290,7 @@ function schema({ colors, styles }) {
       "listFilterWidget.noMatchesOutline": "${colors.hotRed}",
       "listFilterWidget.outline": "${colors.transparent}",
       "list.activeSelectionBackground": "${colors.transparent}",
-      "list.activeSelectionForeground": "${colors.lightBlue}",
+      "list.activeSelectionForeground": "${colors.offWhite}",
       "list.errorForeground": "${colors.hotRed}",
       "list.focusBackground": "${colors.transparent}",
       "list.focusForeground": "${colors.gray}",
@@ -298,7 +298,7 @@ function schema({ colors, styles }) {
       "list.hoverBackground": "${colors.transparent}",
       "list.hoverForeground": "${colors.offWhite}",
       "list.inactiveSelectionBackground": "${colors.transparent}",
-      "list.inactiveSelectionForeground": "${colors.lightBlue}",
+      "list.inactiveSelectionForeground": "${colors.offWhite}",
       "menu.background": "${colors.bg}",
       "menu.foreground": "${colors.offWhite}",
       "menu.selectionBackground": "${colors.transparent}",
@@ -316,9 +316,9 @@ function schema({ colors, styles }) {
       "minimap.findMatchHighlight": "${colors.offWhite}50",
       "minimap.selectionHighlight": "${colors.offWhite}30",
       "minimap.warningHighlight": "${colors.brightYellow}",
-      "minimapGutter.addedBackground": "${colors.lowerMint}",
-      "minimapGutter.deletedBackground": "${colors.hotRed}",
-      "minimapGutter.modifiedBackground": "${colors.lowerBlue}",
+      "minimapGutter.addedBackground": "${colors.lowerMint}80",
+      "minimapGutter.deletedBackground": "${colors.hotRed}80",
+      "minimapGutter.modifiedBackground": "${colors.lightBlue}80",
       "minimapSlider.activeBackground": "${colors.gray}25",
       "minimapSlider.background": "${colors.gray}10",
       "minimapSlider.hoverBackground": "${colors.gray}25",
@@ -384,7 +384,7 @@ function schema({ colors, styles }) {
       "settings.dropdownListBorder": "${colors.offWhite}10",
       "settings.focusedRowBackground": "${colors.transparent}",
       "settings.headerForeground": "${colors.offWhite}",
-      "settings.modifiedItemIndicator": "${colors.lowerBlue}",
+      "settings.modifiedItemIndicator": "${colors.lightBlue}",
       "settings.numberInputBackground": "${colors.white}05",
       "settings.numberInputBorder": "${colors.white}10",
       "settings.numberInputForeground": "${colors.offWhite}",
@@ -438,14 +438,14 @@ function schema({ colors, styles }) {
       "symbolIcon.typeParameterForeground": "${colors.gray}",
       "symbolIcon.unitForeground": "${colors.gray}",
       "symbolIcon.variableForeground": "${colors.lightBlue}",
-      "tab.activeModifiedBorder": "${colors.lowerBlue}",
-      "tab.inactiveModifiedBorder": "${colors.lowerBlue}80",
+      "tab.activeModifiedBorder": "${colors.lightBlue}",
+      "tab.inactiveModifiedBorder": "${colors.lightBlue}80",
       "tab.lastPinnedBorder": "${colors.transparent}",
       "tab.unfocusedActiveBackground": "${colors.bg}",
-      "tab.unfocusedActiveModifiedBorder": "${colors.lowerBlue}80",
+      "tab.unfocusedActiveModifiedBorder": "${colors.lightBlue}40",
       "tab.unfocusedInactiveBackground": "${colors.bg}",
       "tab.unfocusedInactiveForeground": "${colors.gray}80",
-      "tab.unfocusedInactiveModifiedBorder": "${colors.lowerBlue}40",
+      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",
       "terminal.border": "${colors.transparent}",
       "terminal.foreground": "${colors.gray}",
       "terminal.selectionBackground": "${colors.selection}",
@@ -493,7 +493,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["variable.other.constant.object", "variable.other.readwrite.alias", "meta.import variable.other.readwrite"],
         "settings": {
-          "foreground": "${colors.brighterPink}"
+          "foreground": "${colors.lightBlue}"
         }
       },
       {
@@ -515,7 +515,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.operator.expression.delete"],
+        "scope": ["keyword.operator.expression.delete", "keyword.operator.expression.void"],
         "settings": {
           "foreground": "${colors.hotRed}"
         }
@@ -545,13 +545,19 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.control", "keyword", "storage.type", "storage.modifier"],
+        "scope": ["keyword.control", "keyword"],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": ["keyword.operator", "storage.type", "storage.modifier", "keyword.control.conditional", "keyword.control.loop"],
         "settings": {
           "foreground": "${colors.lightBlue}"
         }
       },
       {
-        "scope": ["meta.type.declaration", "keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
+        "scope": ["keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
@@ -628,7 +634,7 @@ function schema({ colors, styles }) {
         "name": "Function/Class Name",
         "scope": "entity.name.function, meta.class entity.name.class, meta.class entity.name.type.class, meta.class meta.function-call variable.function, storage.type.function.arrow, keyword.other.important",
         "settings": {
-          "foreground": "${colors.brightMint}",
+          "foreground": "${colors.lightBlue}",
         }
       },
       {
@@ -674,12 +680,15 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": [
-          "entity.name.type",
-          "support.type",
-        ],
+        "scope": ["meta.type.declaration"],
         "settings": {
-          "foreground": "${colors.pink}"
+          "foreground": "${colors.lightBlue}"
+        }
+      },
+      {
+        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "settings": {
+          "foreground": "${colors.gray}"
         }
       },
       {
