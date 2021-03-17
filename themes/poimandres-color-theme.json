@@ -212,7 +212,7 @@
       "debugTokenExpression.number": "#4fb391",
       "debugTokenExpression.string": "#89ddff",
       "debugTokenExpression.value": "#a6accd99",
-      "debugToolBar.background": "#a6accd",
+      "debugToolBar.background": "#303340",
       "debugView.exceptionLabelBackground": "#d0679d",
       "debugView.exceptionLabelForeground": "#e4f0fb",
       "debugView.stateLabelBackground": "#303340",

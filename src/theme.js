@@ -247,7 +247,7 @@ function schema({ colors, styles }) {
       "debugTokenExpression.number": "${colors.lowerMint}",
       "debugTokenExpression.string": "${colors.lowerBlue}",
       "debugTokenExpression.value": "${colors.gray}99",
-      "debugToolBar.background": "${colors.gray}",
+      "debugToolBar.background": "${colors.focus}",
       "debugView.exceptionLabelBackground": "${colors.hotRed}",
       "debugView.exceptionLabelForeground": "${colors.offWhite}",
       "debugView.stateLabelBackground": "${colors.focus}",
