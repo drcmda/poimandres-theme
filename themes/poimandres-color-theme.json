@@ -33,7 +33,7 @@
       "editorSuggestWidget.background": "#1b1e28",
       "editorSuggestWidget.border": "#ffffff10",
       "editorSuggestWidget.foreground": "#a6accd",
-      "editorSuggestWidget.highlightForeground": "#5DE4C7",
+      "editorSuggestWidget.highlightForeground": "#5DE4B7",
       "editorSuggestWidget.selectedBackground": "#00000050",
       "editorWidget.background": "#1b1e28",
       "editor.findRangeHighlightBackground": "#e4f0fb20",
@@ -141,13 +141,13 @@
       "terminal.ansiBrightBlack": "#a6accd",
       "terminal.ansiBrightBlue": "#ADD7FF",
       "terminal.ansiBrightCyan": "#ADD7FF",
-      "terminal.ansiBrightGreen": "#5DE4C7",
+      "terminal.ansiBrightGreen": "#5DE4B7",
       "terminal.ansiBrightMagenta": "#FCC5E9",
       "terminal.ansiBrightRed": "#d0679d",
       "terminal.ansiBrightWhite": "#ffffff",
       "terminal.ansiBrightYellow": "#fffac2",
       "terminal.ansiCyan": "#89ddff",
-      "terminal.ansiGreen": "#5DE4C7",
+      "terminal.ansiGreen": "#5DE4B7",
       "terminal.ansiMagenta": "#FCC5E9",
       "terminal.ansiRed": "#d0679d",
       "terminal.ansiWhite": "#ffffff",
@@ -175,7 +175,7 @@
       "button.secondaryHoverBackground": "#a6accd",
       "charts.blue": "#ADD7FF",
       "charts.foreground": "#a6accd",
-      "charts.green": "#5DE4C7",
+      "charts.green": "#5DE4B7",
       "charts.lines": "#a6accd80",
       "charts.orange": "#89ddff",
       "charts.purple": "#FCC5E9",
@@ -232,11 +232,11 @@
       "gitDecoration.deletedResourceForeground": "#d0679d",
       "gitDecoration.ignoredResourceForeground": "#767c9d50",
       "gitDecoration.modifiedResourceForeground": "#e4f0fb",
-      "gitDecoration.renamedResourceForeground": "#5DE4C7",
+      "gitDecoration.renamedResourceForeground": "#5DE4B7",
       "gitDecoration.stageDeletedResourceForeground": "#d0679d",
       "gitDecoration.stageModifiedResourceForeground": "#e4f0fb",
       "gitDecoration.submoduleResourceForeground": "#89ddff",
-      "gitDecoration.untrackedResourceForeground": "#5DE4C7",
+      "gitDecoration.untrackedResourceForeground": "#5DE4B7",
       "icon.foreground": "#a6accd",
       "imagePreview.border": "#303340",
       "inputOption.activeBackground": "#00000000",
@@ -416,7 +416,7 @@
       "terminal.selectionBackground": "#717cb420",
       "testing.iconErrored": "#d0679d",
       "testing.iconFailed": "#d0679d",
-      "testing.iconPassed": "#5DE4C7",
+      "testing.iconPassed": "#5DE4B7",
       "testing.iconQueued": "#fffac2",
       "testing.iconSkipped": "#7390AA",
       "testing.iconUnset": "#7390AA",
@@ -428,7 +428,7 @@
       "testing.message.warning.decorationForeground": "#fffac2",
       "testing.message.warning.lineBackground": "#fffac233",
       "testing.peekBorder": "#d0679d",
-      "testing.runAction": "#5DE4C7",
+      "testing.runAction": "#5DE4B7",
       "textBlockQuote.background": "#7390AA1a",
       "textBlockQuote.border": "#89ddff80",
       "textCodeBlock.background": "#00000050",
@@ -564,13 +564,13 @@
       {
         "scope": ["variable.other.constant"],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {
         "scope": ["support.other.variable", "string.other.link"],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {
@@ -585,7 +585,7 @@
           "keyword.other"
         ],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {
@@ -600,7 +600,7 @@
           "text.html.derivative",
         ],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {
@@ -882,7 +882,7 @@
       {
         "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {
@@ -1060,7 +1060,7 @@
       {
         "scope": ["markup.underline.link.markdown", "string.other.link.description.title.markdown"],
         "settings": {
-          "foreground": "#5DE4C7"
+          "foreground": "#5DE4B7"
         }
       },
       {

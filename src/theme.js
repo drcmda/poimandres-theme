@@ -1,7 +1,7 @@
 const italics = {
   colors: {
     brightYellow: '#fffac2',
-    brightMint: '#5DE4C7',
+    brightMint: '#5DE4B7',
     lowerMint: '#4fb391',
     blueishGreen: '#42675A',
 
