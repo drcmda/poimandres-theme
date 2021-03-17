@@ -2,7 +2,7 @@ const italics = {
   colors: {
     brightYellow: '#fffac2',
     brightMint: '#5DE4B7',
-    lowerMint: '#4fb391',
+    lowerMint: '#5fb3a1',
     blueishGreen: '#42675A',
 
     lowerBlue: '#89ddff',
@@ -486,20 +486,44 @@ function schema({ colors, styles }) {
       {
         "scope": "meta.parameters comment.block",
         "settings": {
-          "foreground": "${colors.blueishGreen}",
+          "foreground": "${colors.gray}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
       {
-        "scope": ["variable.other.object", "variable.other.constant.object"],
+        "scope": ["variable.other.constant.object", "variable.other.readwrite.alias", "meta.import variable.other.readwrite"],
         "settings": {
           "foreground": "${colors.brighterPink}"
         }
       },
       {
-        "scope": ["variable", "string constant.other.placeholder", "meta.object-literal.key"],
+        "scope": ["variable.other.property", "variable.other"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": ["meta.object.member"],
         "settings": {
           "foreground": "${colors.lightBlue}"
+        }
+      },
+      {
+        "scope": ["variable - meta.import", "constant.other.placeholder", "variable.other.object.property", "meta.object-literal.key-meta.object.member"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": ["keyword.operator.expression.delete"],
+        "settings": {
+          "foreground": "${colors.hotRed}"
+        }
+      },
+      {
+        "scope": ["constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
+        "settings": {
+          "foreground": "${colors.brightMint}"
         }
       },
       {
@@ -521,9 +545,15 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword", "storage.type", "storage.modifier"],
+        "scope": ["keyword.control", "keyword", "storage.type", "storage.modifier"],
         "settings": {
           "foreground": "${colors.lightBlue}"
+        }
+      },
+      {
+        "scope": ["meta.type.declaration", "keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -533,10 +563,20 @@ function schema({ colors, styles }) {
         }
       },
       {
+        "scope": ["keyword-meta.export"],
+        "settings": {
+          "foreground": "${colors.lightBlue}"
+        }
+      },
+      {
+        "scope": ["meta.brace", "punctuation",],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
+      {
         "scope": [
-          "keyword.control",
-          "constant.other.color",
-          "punctuation",
+          "constant.other.color",          
           "meta.tag",
           "punctuation.definition.tag",
           "punctuation.separator.inheritance.php",
@@ -548,7 +588,6 @@ function schema({ colors, styles }) {
           "keyword.other.substitution",
           "meta.objectliteral",
           "meta.block",
-          "meta.brace",
         ],
         "settings": {
           "foreground": "${colors.offWhite}"
@@ -579,27 +618,23 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": [
-          "entity.name.function",
-          "meta.function-call",
-          "variable.function",
-          "support.function",
-          "keyword.other.special-method"
-        ],
+        "name": "Function Call",
+        "scope": "variable.function, source meta.function-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
-          "foreground": "${colors.offWhite}"
+          "foreground": "${colors.brighterPink}"
+        }
+      },
+      {
+        "name": "Function/Class Name",
+        "scope": "entity.name.function, meta.class entity.name.class, meta.class entity.name.type.class, meta.class meta.function-call variable.function, storage.type.function.arrow, keyword.other.important",
+        "settings": {
+          "foreground": "${colors.brightMint}",
         }
       },
       {
         "scope": ["source.cpp meta.block variable.other"],
         "settings": {
           "foreground": "${colors.lightBlue}"
-        }
-      },
-      {
-        "scope": ["variable.other.constant"],
-        "settings": {
-          "foreground": "${colors.brightMint}"
         }
       },
       {
@@ -611,7 +646,7 @@ function schema({ colors, styles }) {
       {
         "scope": [
           "constant.numeric",
-          "constant.language",
+          "constant.language-meta.import",
           "support.constant",
           "constant.character",
           "constant.escape",
@@ -640,8 +675,16 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
-          "entity.name",
+          "entity.name.type",
           "support.type",
+        ],
+        "settings": {
+          "foreground": "${colors.pink}"
+        }
+      },
+      {
+        "scope": [
+          "entity.name",
           "support.class",
           "support.orther.namespace.use.php",
           "meta.use.php",
@@ -651,12 +694,6 @@ function schema({ colors, styles }) {
         ],
         "settings": {
           "foreground": "${colors.brighterPink}"
-        }
-      },
-      {
-        "scope": ["support.type"],
-        "settings": {
-          "foreground": "${colors.desaturatedBlue}"
         }
       },
       {
