@@ -278,7 +278,7 @@
       "merge.incomingContentBackground": "#89ddff33",
       "merge.incomingHeaderBackground": "#89ddff80",
       "minimap.errorHighlight": "#d0679d",
-      "minimap.findMatchHighlight": "#e4f0fb20",
+      "minimap.findMatchHighlight": "#e4f0fb50",
       "minimap.selectionHighlight": "#e4f0fb30",
       "minimap.warningHighlight": "#fffac2",
       "minimapGutter.addedBackground": "#4fb391",
@@ -338,7 +338,7 @@
       "quickInputTitle.background": "#ffffff1b",
       "sash.hoverBorder": "#00000000",
       "scm.providerBorder": "#e4f0fb10",
-      "searchEditor.findMatchBackground": "#89ddff3f",
+      "searchEditor.findMatchBackground": "#e4f0fb50",
       "searchEditor.textInputBorder": "#ffffff10",
       "settings.checkboxBackground": "#1b1e28",
       "settings.checkboxBorder": "#ffffff10",
@@ -358,7 +358,7 @@
       "settings.textInputForeground": "#e4f0fb",
       "sideBar.dropBackground": "#7390AA80",
       "sideBarSectionHeader.foreground": "#a6accd",
-      "statusBar.debuggingBackground": "#4fb391",
+      "statusBar.debuggingBackground": "#303340",
       "statusBar.debuggingForeground": "#ffffff",
       "statusBar.noFolderForeground": "#a6accd",
       "statusBarItem.activeBackground": "#ffffff2e",
@@ -1080,7 +1080,19 @@
         "settings": {
           "foreground": "#ADD7FF"
         }
-      }
+      },
+      {
+        "scope": ["log.error", "log.exception"],
+        "settings": {
+          "foreground": "#d0679d"
+        }
+      },
+      {
+        "scope": ["log.verbose"],
+        "settings": {
+          "foreground": "#a6accd"
+        }
+      },
     ]
   }
   

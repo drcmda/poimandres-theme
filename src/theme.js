@@ -313,7 +313,7 @@ function schema({ colors, styles }) {
       "merge.incomingContentBackground": "${colors.lowerBlue}33",
       "merge.incomingHeaderBackground": "${colors.lowerBlue}80",
       "minimap.errorHighlight": "${colors.hotRed}",
-      "minimap.findMatchHighlight": "${colors.offWhite}20",
+      "minimap.findMatchHighlight": "${colors.offWhite}50",
       "minimap.selectionHighlight": "${colors.offWhite}30",
       "minimap.warningHighlight": "${colors.brightYellow}",
       "minimapGutter.addedBackground": "${colors.lowerMint}",
@@ -373,7 +373,7 @@ function schema({ colors, styles }) {
       "quickInputTitle.background": "${colors.white}1b",
       "sash.hoverBorder": "${colors.transparent}",
       "scm.providerBorder": "${colors.offWhite}10",
-      "searchEditor.findMatchBackground": "${colors.lowerBlue}3f",
+      "searchEditor.findMatchBackground": "${colors.offWhite}50",
       "searchEditor.textInputBorder": "${colors.white}10",
       "settings.checkboxBackground": "${colors.bg}",
       "settings.checkboxBorder": "${colors.white}10",
@@ -393,7 +393,7 @@ function schema({ colors, styles }) {
       "settings.textInputForeground": "${colors.offWhite}",
       "sideBar.dropBackground": "${colors.bluishGrayBrighter}80",
       "sideBarSectionHeader.foreground": "${colors.gray}",
-      "statusBar.debuggingBackground": "${colors.lowerMint}",
+      "statusBar.debuggingBackground": "${colors.focus}",
       "statusBar.debuggingForeground": "${colors.white}",
       "statusBar.noFolderForeground": "${colors.gray}",
       "statusBarItem.activeBackground": "${colors.white}2e",
@@ -1115,7 +1115,19 @@ function schema({ colors, styles }) {
         "settings": {
           "foreground": "${colors.lightBlue}"
         }
-      }
+      },
+      {
+        "scope": ["log.error", "log.exception"],
+        "settings": {
+          "foreground": "${colors.hotRed}"
+        }
+      },
+      {
+        "scope": ["log.verbose"],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
     ]
   }
   `
