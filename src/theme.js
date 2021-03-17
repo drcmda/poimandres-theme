@@ -1,7 +1,7 @@
 const italics = {
   colors: {
     brightYellow: '#fffac2',
-    brightMint: '#5DE4B7',
+    brightMint: '#5DE4C7',
     lowerMint: '#4fb391',
     blueishGreen: '#42675A',
 
@@ -10,19 +10,18 @@ const italics = {
     desaturatedBlue: '#91B4D5',
     bluishGrayBrighter: '#7390AA',
 
-    hotRed: '#e0678d',
+    hotRed: '#d0679d',
     pink: '#FCC5E9',
     brighterPink: '#FAE4FC',
     gray: '#a6accd',
 
     darkerGray: '#767c9d',
     bluishGray: '#506477',
-    lowerHighlight: '#3a3f58',
     focus: '#303340',
-
-    white: '#ffffff',    
-    offWhite: '#e4f0fb',
     bg: '#1b1e28',
+
+    white: '#ffffff',
+    offWhite: '#e4f0fb',
     selection: '#717cb420',
     transparent: '#00000000',
   },
@@ -64,7 +63,7 @@ function schema({ colors, styles }) {
       "editorHoverWidget.background": "${colors.bg}",
       "editorHoverWidget.border": "${colors.white}10",
       "editorIndentGuide.background": "${colors.focus}",
-      "editorLineNumber.foreground": "${colors.lowerHighlight}",
+      "editorLineNumber.foreground": "${colors.darkerGray}50",
       "editorLink.activeForeground": "${colors.lightBlue}",
       "editorSuggestWidget.background": "${colors.bg}",
       "editorSuggestWidget.border": "${colors.white}10",
@@ -105,7 +104,7 @@ function schema({ colors, styles }) {
       "editorInlineHint.foreground": "${colors.bg}",
       "editorLightBulb.foreground": "${colors.brightYellow}",
       "editorLightBulbAutoFix.foreground": "${colors.lightBlue}",
-      "editorLineNumber.activeForeground": "#c6c6c6",
+      "editorLineNumber.activeForeground": "${colors.gray}",
       "editorMarkerNavigation.background": "#2d2d30",
       "editorMarkerNavigationError.background": "${colors.hotRed}",
       "editorMarkerNavigationInfo.background": "${colors.lightBlue}",
@@ -144,16 +143,6 @@ function schema({ colors, styles }) {
       "inputValidation.errorForeground": "${colors.hotRed}",
       "inputValidation.infoBorder": "${colors.lowerBlue}",
       "inputValidation.warningBorder": "${colors.brightYellow}",
-      "list.activeSelectionBackground": "${colors.transparent}",
-      "list.activeSelectionForeground": "${colors.lightBlue}",
-      "list.errorForeground": "${colors.hotRed}",
-      "list.focusBackground": "${colors.transparent}",
-      "list.focusForeground": "${colors.gray}",
-      "list.highlightForeground": "${colors.lowerMint}",
-      "list.hoverBackground": "${colors.transparent}",
-      "list.hoverForeground": "${colors.offWhite}",
-      "list.inactiveSelectionBackground": "${colors.transparent}",
-      "list.inactiveSelectionForeground": "${colors.lightBlue}",
       "notifications.background": "${colors.bg}",
       "notifications.foreground": "${colors.offWhite}",
       "panel.border": "#00000030",
@@ -300,6 +289,16 @@ function schema({ colors, styles }) {
       "listFilterWidget.background": "${colors.focus}",
       "listFilterWidget.noMatchesOutline": "${colors.hotRed}",
       "listFilterWidget.outline": "${colors.transparent}",
+      "list.activeSelectionBackground": "${colors.transparent}",
+      "list.activeSelectionForeground": "${colors.lightBlue}",
+      "list.errorForeground": "${colors.hotRed}",
+      "list.focusBackground": "${colors.transparent}",
+      "list.focusForeground": "${colors.gray}",
+      "list.highlightForeground": "${colors.lowerMint}",
+      "list.hoverBackground": "${colors.transparent}",
+      "list.hoverForeground": "${colors.offWhite}",
+      "list.inactiveSelectionBackground": "${colors.transparent}",
+      "list.inactiveSelectionForeground": "${colors.lightBlue}",
       "menu.background": "${colors.bg}",
       "menu.foreground": "${colors.offWhite}",
       "menu.selectionBackground": "${colors.transparent}",
@@ -468,7 +467,7 @@ function schema({ colors, styles }) {
       "textBlockQuote.background": "${colors.bluishGrayBrighter}1a",
       "textBlockQuote.border": "${colors.lowerBlue}80",
       "textCodeBlock.background": "#00000050",
-      "textPreformat.foreground": "${colors.brightYellow}",
+      "textPreformat.foreground": "${colors.offWhite}",
       "textSeparator.foreground": "${colors.white}2e",
       "tree.tableColumnsBorder": "${colors.gray}20",
       "welcomePage.progress.background": "${colors.white}05",
@@ -480,7 +479,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["comment", "punctuation.definition.comment"],
         "settings": {
-          "foreground": "${colors.bluishGray}",
+          "foreground": "${colors.darkerGray}60",
           "fontStyle": "${styles.fontStyle}"
         }
       },
@@ -492,7 +491,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["variable", "string constant.other.placeholder"],
+        "scope": ["variable", "string constant.other.placeholder", "meta.object-literal.key"],
         "settings": {
           "foreground": "${colors.lightBlue}"
         }
@@ -540,7 +539,10 @@ function schema({ colors, styles }) {
           "punctuation.definition.tag.end.html",
           "punctuation.section.embedded",
           "keyword.other.template",
-          "keyword.other.substitution"
+          "keyword.other.substitution",
+          "meta.objectliteral",
+          "meta.block",
+          "meta.brace",
         ],
         "settings": {
           "foreground": "${colors.offWhite}"
@@ -623,7 +625,8 @@ function schema({ colors, styles }) {
           "entity.other.inherited-class",
           "markup.heading",
           "markup.inserted.git_gutter",
-          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+          "text.html.derivative",
         ],
         "settings": {
           "foreground": "${colors.brightMint}"
@@ -1122,7 +1125,7 @@ function svg({ colors }) {
     />`
   return `
   <svg width="200" height="250" viewBox="0 0 50 ${
-    Math.ceil((Object.keys(colors).length) / 4) * 12
+    Math.ceil(Object.keys(colors).length / 4) * 12
   }" xmlns="http://www.w3.org/2000/svg">
     ${Object.values(colors).map(circle).join('')}
   </svg>
