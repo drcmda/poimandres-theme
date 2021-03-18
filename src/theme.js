@@ -63,19 +63,19 @@ const white = {
     blueishGreen: '#42675A',
 
     lowerBlue: '#89ddff',
-    lightBlue: '#6Dc7fF',
+    lightBlue: '#3Dc7fF',
     desaturatedBlue: '#91B4D5',
     bluishGrayBrighter: '#7390AA',
 
-    hotRed: '#f0679d',
-    pink: '#EC7373',
-    brighterPink: '#F09393',
+    hotRed: '#ff6477',
+    pink: '#EE8355',
+    brighterPink: '#FFAF8D',
     gray: '#969cbd',
 
-    darkerGray: '#767c9d',
+    darkerGray: '#969cbd',
     bluishGray: '#506477',
     focus: '#c0d0f0',
-    bg: '#F4FAFF',
+    bg: '#F7FBFF',
 
     offWhite: '#3b3e48',
     selection: '#717cb425',
