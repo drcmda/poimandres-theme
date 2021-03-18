@@ -35,12 +35,12 @@
     "themes": [
       {
         "label": "poimandres",
-        "uiTheme": "hc-black",
+        "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme.json"
       },
       {
         "label": "poimandres-noitalics",
-        "uiTheme": "hc-black",
+        "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-noitalics.json"
       },
       {
