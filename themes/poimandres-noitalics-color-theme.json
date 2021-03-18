@@ -462,7 +462,7 @@
         }
       },
       {
-        "scope": ["variable.other.property", "variable.other"],
+        "scope": ["variable.other.property", "variable.other", "support.type.object"],
         "settings": {
           "foreground": "#e4f0fb"
         }
@@ -480,13 +480,25 @@
         }
       },
       {
-        "scope": ["keyword.operator.expression.delete", "keyword.operator.expression.void"],
+        "scope": ["keyword.control.flow"],
+        "settings": {
+          "foreground": "#a6accd"
+        }
+      },
+      {
+        "scope": ["keyword.operator.new"],
+        "settings": {
+          "foreground": "#5DE4c7"
+        }
+      },
+      {
+        "scope": ["support.class.error", "keyword.control.trycatch", "keyword.operator.expression.delete", "keyword.operator.expression.void", "keyword.operator.void", "keyword.operator.delete"],
         "settings": {
           "foreground": "#d0679d"
         }
       },
       {
-        "scope": ["constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
+        "scope": ["variable.other.readwrite.js", "constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
         "settings": {
           "foreground": "#5DE4c7"
         }
@@ -522,7 +534,7 @@
         }
       },
       {
-        "scope": ["keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
+        "scope": ["keyword.control.module", "keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
         "settings": {
           "foreground": "#e4f0fb"
         }
@@ -540,7 +552,7 @@
         }
       },
       {
-        "scope": ["meta.brace", "punctuation",],
+        "scope": ["meta.brace", "punctuation", "keyword.operator.existential"],
         "settings": {
           "foreground": "#a6accd"
         }
@@ -590,7 +602,7 @@
       },
       {
         "name": "Function Call",
-        "scope": "variable.function, source meta.function-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
+        "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
           "foreground": "#FAE4FC"
         }

@@ -497,7 +497,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["variable.other.property", "variable.other"],
+        "scope": ["variable.other.property", "variable.other", "support.type.object"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
@@ -515,13 +515,25 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.operator.expression.delete", "keyword.operator.expression.void"],
+        "scope": ["keyword.control.flow"],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": ["keyword.operator.new"],
+        "settings": {
+          "foreground": "${colors.brightMint}"
+        }
+      },
+      {
+        "scope": ["support.class.error", "keyword.control.trycatch", "keyword.operator.expression.delete", "keyword.operator.expression.void", "keyword.operator.void", "keyword.operator.delete"],
         "settings": {
           "foreground": "${colors.hotRed}"
         }
       },
       {
-        "scope": ["constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
+        "scope": ["variable.other.readwrite.js", "constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
         "settings": {
           "foreground": "${colors.brightMint}"
         }
@@ -557,7 +569,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
+        "scope": ["keyword.control.module", "keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
@@ -575,7 +587,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["meta.brace", "punctuation",],
+        "scope": ["meta.brace", "punctuation", "keyword.operator.existential"],
         "settings": {
           "foreground": "${colors.gray}"
         }
@@ -625,7 +637,7 @@ function schema({ colors, styles }) {
       },
       {
         "name": "Function Call",
-        "scope": "variable.function, source meta.function-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
+        "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
           "foreground": "${colors.brighterPink}"
         }
