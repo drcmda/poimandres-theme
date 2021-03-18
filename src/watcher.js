@@ -12,10 +12,18 @@ function generateTheme() {
   fs.writeFile('themes/poimandres-color-theme.json', schema(base), (err) => err && console.log(err))
   fs.writeFile('themes/poimandres-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
   fs.writeFile('themes/poimandres-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
-  fs.writeFile('themes/poimandres-color-theme-noitalics-storm.json', schema(stormNoitalics), (err) => err && console.log(err))
-  
+  fs.writeFile(
+    'themes/poimandres-color-theme-noitalics-storm.json',
+    schema(stormNoitalics),
+    (err) => err && console.log(err),
+  )
+
+  delete base.colors.white
+  delete base.colors.black
   delete base.colors.transparent
-  sharp(Buffer.from(svg(base).trim())).png().toFile('assets/dots.png')
+  sharp(Buffer.from(svg(base).trim()), { density: 400 })
+    .png()
+    .toFile('assets/dots.png')
   console.log('assets saved ...')
 }
 
