@@ -1,4 +1,4 @@
-const italics = {
+const base = {
   colors: {
     brightYellow: '#fffac2',
     brightMint: '#5DE4c7',
@@ -30,7 +30,32 @@ const italics = {
   },
 }
 
-const noitalics = { ...italics, styles: { ...italics.styles, fontStyle: '' } }
+const noitalics = { ...base, styles: { ...base.styles, fontStyle: '' } }
+
+const storm = {
+  ...base,
+  colors: {
+    ...base.colors,
+    darkerGray: '#868cad',
+    bluishGray: '#607487',
+    focus: '#404350',
+    bg: '#252b37',
+    selection: '#818cc425',
+  },
+}
+
+const stormNoitalics = {
+  ...base,
+  colors: {
+    ...base.colors,
+    darkerGray: '#868cad',
+    bluishGray: '#607487',
+    focus: '#404350',
+    bg: '#28303a',
+    selection: '#818cc425',
+  },
+  styles: { ...base.styles, fontStyle: '' },
+}
 
 function schema({ colors, styles }) {
   return `{
@@ -606,7 +631,7 @@ function schema({ colors, styles }) {
           "punctuation.section.embedded",
           "keyword.other.template",
           "keyword.other.substitution",
-          "meta.objectliteral",
+          "meta.objectliteral"
         ],
         "settings": {
           "foreground": "${colors.offWhite}"
@@ -647,7 +672,7 @@ function schema({ colors, styles }) {
         "name": "Function/Class Name",
         "scope": "entity.name.function, meta.class entity.name.class, meta.class entity.name.type.class, meta.class meta.function-call variable.function, keyword.other.important",
         "settings": {
-          "foreground": "${colors.pink}",
+          "foreground": "${colors.pink}"
         }
       },
       {
@@ -685,7 +710,7 @@ function schema({ colors, styles }) {
           "markup.heading",
           "markup.inserted.git_gutter",
           "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-          "text.html.derivative",
+          "text.html.derivative"
         ],
         "settings": {
           "foreground": "${colors.brightMint}"
@@ -1190,7 +1215,7 @@ function schema({ colors, styles }) {
         "settings": {
           "foreground": "${colors.gray}"
         }
-      },
+      }
     ]
   }
   `
@@ -1214,6 +1239,8 @@ function svg({ colors }) {
 }
 
 module.exports.schema = schema
-module.exports.italics = italics
+module.exports.base = base
 module.exports.noitalics = noitalics
+module.exports.storm = storm
+module.exports.stormNoitalics = stormNoitalics
 module.exports.svg = svg

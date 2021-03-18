@@ -39,14 +39,25 @@
         "path": "./themes/poimandres-color-theme.json"
       },
       {
+        "label": "poimandres-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme-storm.json"
+      },
+      {
         "label": "poimandres-noitalics",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-noitalics-color-theme.json"
+        "path": "./themes/poimandres-color-theme-noitalics.json"
+      },
+      {
+        "label": "poimandres-noitalics-storm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme-noitalics-storm.json"
       }
     ]
   },
   "devDependencies": {
     "filewatcher": "^3.0.1",
+    "prettier": "^2.2.1",
     "sharp": "^0.27.2"
   }
 }

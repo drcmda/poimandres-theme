@@ -8,11 +8,14 @@ function requireUncached(module) {
 }
 
 function generateTheme() {
-  const { italics, noitalics, schema, svg } = requireUncached('./theme')
-  fs.writeFile('themes/poimandres-color-theme.json', schema(italics), (err) => err && console.log(err))
-  fs.writeFile('themes/poimandres-noitalics-color-theme.json', schema(noitalics), (err) => err && console.log(err))
-  delete italics.colors.transparent
-  sharp(Buffer.from(svg(italics).trim())).png().toFile('assets/dots.png')
+  const { base, noitalics, storm, stormNoitalics, schema, svg } = requireUncached('./theme')
+  fs.writeFile('themes/poimandres-color-theme.json', schema(base), (err) => err && console.log(err))
+  fs.writeFile('themes/poimandres-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
+  fs.writeFile('themes/poimandres-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
+  fs.writeFile('themes/poimandres-color-theme-noitalics-storm.json', schema(stormNoitalics), (err) => err && console.log(err))
+  
+  delete base.colors.transparent
+  sharp(Buffer.from(svg(base).trim())).png().toFile('assets/dots.png')
   console.log('assets saved ...')
 }
 

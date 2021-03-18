@@ -447,14 +447,14 @@
         "scope": ["comment", "punctuation.definition.comment"],
         "settings": {
           "foreground": "#767c9d60",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
         "scope": "meta.parameters comment.block",
         "settings": {
           "foreground": "#a6accd",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -544,7 +544,7 @@
       {
         "scope": ["Keyword", "Storage"],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -710,14 +710,14 @@
         "scope": ["variable.language"],
         "settings": {
           "foreground": "#FCC5E9",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
         "scope": ["entity.name.method.js"],
         "settings": {
           "foreground": "#91B4D5",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -730,14 +730,14 @@
         "scope": ["entity.other.attribute-name"],
         "settings": {
           "foreground": "#91B4D5",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
         "scope": ["text.html.basic entity.other.attribute-name.html", "text.html.basic entity.other.attribute-name"],
         "settings": {
           "foreground": "#5fb3a1",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -793,14 +793,14 @@
         "scope": ["tag.decorator.js entity.name.tag.js", "tag.decorator.js punctuation.definition.tag.js"],
         "settings": {
           "foreground": "#42675A",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
         "scope": ["source.js constant.other.object.key.js string.unquoted.label.js"],
         "settings": {
           "foreground": "#5fb3a1",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -905,7 +905,7 @@
         "scope": ["markup.italic"],
         "settings": {
           "foreground": "#7390AA",
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -939,7 +939,7 @@
       {
         "scope": ["markup.strike"],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -951,7 +951,7 @@
       {
         "scope": ["markup.quote"],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -1083,7 +1083,7 @@
       {
         "scope": "markup.italic.markdown",
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
