@@ -46,14 +46,7 @@ const storm = {
 
 const stormNoitalics = {
   ...base,
-  colors: {
-    ...base.colors,
-    darkerGray: '#868cad',
-    bluishGray: '#607487',
-    focus: '#404350',
-    bg: '#28303a',
-    selection: '#818cc425',
-  },
+  colors: { ...storm.colors },
   styles: { ...base.styles, fontStyle: '' },
 }
 

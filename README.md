@@ -1,9 +1,12 @@
 <p align="middle">
   <img src="assets/dots.png" />
   <img src="assets/screencap.png" />
+  <img src="assets/screencap-bright.png" />
 </p>
 
-Poimandres is a minimal, frameless theme based on the [blueberry](https://github.com/peymanslh/vscode-blueberry-dark-theme) dark-theme. This theme tries to focus on semantic meaning instead of color variety. You'll find that it colors things like errors, voids, throws and deletes in red, types are slighty darker so that the spotlight is on the code, green new's, etc.
+Poimandres is a minimal, frameless dark-theme inspired mostly by [blueberry](https://github.com/peymanslh/vscode-blueberry-dark-theme). This theme tries to focus on semantic meaning instead of color variety. You'll find that it colors things like errors, voids, throws and deletes in red, types are slighty darker so that the spotlight is on the code, green new's, etc.
+
+It comes in four variants: basic, brighter (storm), and two non-italic variants.
 
 The screencap above uses the following settings:
 
