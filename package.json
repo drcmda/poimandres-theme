@@ -52,6 +52,16 @@
         "label": "poimandres-noitalics-storm",
         "uiTheme": "vs-dark",
         "path": "./themes/poimandres-color-theme-noitalics-storm.json"
+      },
+      {
+        "label": "poimandres-white-beta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme-white.json"
+      },
+      {
+        "label": "poimandres-white-noitalics-beta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/poimandres-color-theme-white-noitalics.json"
       }
     ]
   },

@@ -53,6 +53,44 @@ const stormNoitalics = {
   styles: { ...base.styles, fontStyle: '' },
 }
 
+const white = {
+  ...base,
+  colors: {
+    ...base,
+    brightYellow: '#FFD467',
+    brightMint: '#2CDCB6',
+    lowerMint: '#5fb3a1',
+    blueishGreen: '#42675A',
+
+    lowerBlue: '#89ddff',
+    lightBlue: '#6Dc7fF',
+    desaturatedBlue: '#91B4D5',
+    bluishGrayBrighter: '#7390AA',
+
+    hotRed: '#f0679d',
+    pink: '#EC7373',
+    brighterPink: '#F09393',
+    gray: '#969cbd',
+
+    darkerGray: '#767c9d',
+    bluishGray: '#506477',
+    focus: '#c0d0f0',
+    bg: '#F4FAFF',
+
+    offWhite: '#3b3e48',
+    selection: '#717cb425',
+
+    white: '#000000',
+    black: '#ffffff',
+    transparent: '#00000000',
+  },
+}
+
+const whiteNoitalics = {
+  ...white,
+  styles: { ...white.styles, fontStyle: '' },
+}
+
 function schema({ colors, styles }) {
   return `{
     "name": "poimandres dark theme",
@@ -1239,4 +1277,6 @@ module.exports.base = base
 module.exports.noitalics = noitalics
 module.exports.storm = storm
 module.exports.stormNoitalics = stormNoitalics
+module.exports.white = white
+module.exports.whiteNoitalics = whiteNoitalics
 module.exports.svg = svg
