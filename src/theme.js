@@ -58,12 +58,12 @@ const white = {
   colors: {
     ...base,
     brightYellow: '#FFD467',
-    brightMint: '#2CDCB6',
+    brightMint: '#0CDCB6',
     lowerMint: '#5fb3a1',
     blueishGreen: '#42675A',
 
     lowerBlue: '#89ddff',
-    lightBlue: '#3Dc7fF',
+    lightBlue: '#2Dc7fF',
     desaturatedBlue: '#91B4D5',
     bluishGrayBrighter: '#7390AA',
 
@@ -74,8 +74,8 @@ const white = {
 
     darkerGray: '#969cbd',
     bluishGray: '#506477',
-    focus: '#c0d0f0',
-    bg: '#F7FBFF',
+    focus: '#c0d0df',
+    bg: '#fafdff',
 
     offWhite: '#3b3e48',
     selection: '#717cb425',
