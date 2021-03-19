@@ -326,7 +326,7 @@ function schema({ colors, styles }) {
       "gitDecoration.addedResourceForeground": "${colors.lowerMint}",
       "gitDecoration.conflictingResourceForeground": "${colors.hotRed}",
       "gitDecoration.deletedResourceForeground": "${colors.hotRed}",
-      "gitDecoration.ignoredResourceForeground": "${colors.darkerGray}50",
+      "gitDecoration.ignoredResourceForeground": "${colors.darkerGray}70",
       "gitDecoration.modifiedResourceForeground": "${colors.lightBlue}",
       "gitDecoration.renamedResourceForeground": "${colors.brightMint}",
       "gitDecoration.stageDeletedResourceForeground": "${colors.hotRed}",
@@ -540,7 +540,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["comment", "punctuation.definition.comment"],
         "settings": {
-          "foreground": "${colors.darkerGray}60",
+          "foreground": "${colors.darkerGray}B0",
           "fontStyle": "${styles.fontStyle}"
         }
       },
@@ -594,7 +594,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["variable.parameter", "variable.other.readwrite.js", "constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
+        "scope": ["variable.parameter", "variable.other.readwrite.js", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
@@ -724,20 +724,13 @@ function schema({ colors, styles }) {
       {
         "scope": [
           "constant.numeric",
-          "constant.language-meta.import",
           "support.constant",
           "constant.character",
           "constant.escape",          
           "keyword.other.unit",
-          "keyword.other"
-        ],
-        "settings": {
-          "foreground": "${colors.brightMint}"
-        }
-      },
-      {
-        "scope": [
+          "keyword.other",
           "string",
+          "constant.language",
           "constant.other.symbol",
           "constant.other.key",
           "entity.other.inherited-class",
@@ -797,7 +790,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["entity.name.module.js", "variable.import.parameter.js", "variable.other.class.js"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {

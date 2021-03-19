@@ -232,7 +232,7 @@
       "gitDecoration.addedResourceForeground": "#5fb3a1",
       "gitDecoration.conflictingResourceForeground": "#d0679d",
       "gitDecoration.deletedResourceForeground": "#d0679d",
-      "gitDecoration.ignoredResourceForeground": "#767c9d50",
+      "gitDecoration.ignoredResourceForeground": "#767c9d70",
       "gitDecoration.modifiedResourceForeground": "#ADD7FF",
       "gitDecoration.renamedResourceForeground": "#5DE4c7",
       "gitDecoration.stageDeletedResourceForeground": "#d0679d",
@@ -446,7 +446,7 @@
       {
         "scope": ["comment", "punctuation.definition.comment"],
         "settings": {
-          "foreground": "#767c9d60",
+          "foreground": "#767c9dB0",
           "fontStyle": "italic"
         }
       },
@@ -500,7 +500,7 @@
         }
       },
       {
-        "scope": ["variable.parameter", "variable.other.readwrite.js", "constant.language", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
+        "scope": ["variable.parameter", "variable.other.readwrite.js", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
         "settings": {
           "foreground": "#e4f0fb"
         }
@@ -630,20 +630,13 @@
       {
         "scope": [
           "constant.numeric",
-          "constant.language-meta.import",
           "support.constant",
           "constant.character",
           "constant.escape",          
           "keyword.other.unit",
-          "keyword.other"
-        ],
-        "settings": {
-          "foreground": "#5DE4c7"
-        }
-      },
-      {
-        "scope": [
+          "keyword.other",
           "string",
+          "constant.language",
           "constant.other.symbol",
           "constant.other.key",
           "entity.other.inherited-class",
@@ -703,7 +696,7 @@
       {
         "scope": ["entity.name.module.js", "variable.import.parameter.js", "variable.other.class.js"],
         "settings": {
-          "foreground": "#91B4D5"
+          "foreground": "#e4f0fb"
         }
       },
       {
