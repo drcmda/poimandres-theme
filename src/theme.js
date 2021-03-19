@@ -588,7 +588,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["storage.modifier.async", "support.class.error", "keyword.control.trycatch", "keyword.operator.expression.delete", "keyword.operator.expression.void", "keyword.operator.void", "keyword.operator.delete"],
+        "scope": ["variable.language.super", "storage.modifier.async", "support.class.error", "keyword.control.trycatch", "keyword.operator.expression.delete", "keyword.operator.expression.void", "keyword.operator.void", "keyword.operator.delete"],
         "settings": {
           "foreground": "${colors.hotRed}"
         }
@@ -992,7 +992,7 @@ function schema({ colors, styles }) {
           "markup.heading.markdown punctuation.definition.heading.markdown"
         ],
         "settings": {
-          "foreground": "${colors.lowerMint}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -1140,14 +1140,14 @@ function schema({ colors, styles }) {
       {
         "scope": ["entity.name.section.markdown", "markup.heading.setext.1.markdown", "markup.heading.setext.2.markdown"],
         "settings": {
-          "foreground": "${colors.blueishGreen}",
+          "foreground": "${colors.offWhite}",
           "fontStyle": "bold"
         }
       },
       {
         "scope": "meta.paragraph.markdown",
         "settings": {
-          "foreground": "${colors.offWhite}"
+          "foreground": "${colors.offWhite}d0"
         }
       },
       {
@@ -1165,7 +1165,7 @@ function schema({ colors, styles }) {
       {
         "scope": "meta.separator.markdown",
         "settings": {
-          "foreground": "${colors.hotRed}"
+          "foreground": "${colors.darkerGray}"
         }
       },
       {
@@ -1239,7 +1239,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["log.error", "log.exception"],
+        "scope": ["source.ignore", "log.error", "log.exception"],
         "settings": {
           "foreground": "${colors.hotRed}"
         }
