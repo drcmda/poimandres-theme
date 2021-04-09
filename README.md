@@ -33,3 +33,11 @@ The screencap above uses the following settings:
     npm run dev
 
 Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js` will now be reflected when you save.
+
+## Related
+
+- [poimandres-alacritty][poimandres-alacritty]: Alacritty version
+- [poimandres-iterm][poimandres-iterm]: Iterm version
+
+[poimandres-alacritty]: https://github.com/z0al/poimandres-alacritty
+[poimandres-iterm]: https://github.com/alii/poimandres-iterm
