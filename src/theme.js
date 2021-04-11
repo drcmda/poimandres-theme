@@ -53,44 +53,6 @@ const stormNoitalics = {
   styles: { ...base.styles, fontStyle: '' },
 }
 
-const white = {
-  ...base,
-  colors: {
-    ...base,
-    brightYellow: '#FFD467',
-    brightMint: '#01DAB2',
-    lowerMint: '#62AA9B',
-    blueishGreen: '#42675A',
-
-    lowerBlue: '#8ABACD',
-    lightBlue: '#0EBFFF',
-    desaturatedBlue: '#91B4D5',
-    bluishGrayBrighter: '#7390AA',
-
-    hotRed: '#ff2090',
-    pink: '#EB8394',
-    brighterPink: '#CF9B9A',
-    gray: '#969cbd',
-
-    darkerGray: '#969cbd',
-    bluishGray: '#506477',
-    focus: '#c0d0df',
-    bg: '#FEFEFF',
-
-    offWhite: '#3b3e48',
-    selection: '#717cb425',
-
-    white: '#000000',
-    black: '#ffffff',
-    transparent: '#00000000',
-  },
-}
-
-const whiteNoitalics = {
-  ...white,
-  styles: { ...white.styles, fontStyle: '' },
-}
-
 function schema({ colors, styles }) {
   return `{
     "name": "poimandres dark theme",
@@ -226,12 +188,20 @@ function schema({ colors, styles }) {
       "statusBar.background": "${colors.bg}",
       "statusBar.foreground": "${colors.gray}",
       "statusBar.noFolderBackground": "${colors.bg}",
-      "tab.activeBackground": "${colors.bg}",
+      "tab.activeBackground": "${colors.focus}60",
       "tab.activeForeground": "${colors.offWhite}",
       "tab.border": "${colors.transparent}",
       "tab.inactiveBackground": "${colors.bg}",
       "tab.inactiveForeground": "${colors.darkerGray}",
       "tab.unfocusedActiveForeground": "${colors.gray}",
+      "tab.activeModifiedBorder": "${colors.lightBlue}",
+      "tab.inactiveModifiedBorder": "${colors.lightBlue}80",
+      "tab.lastPinnedBorder": "${colors.transparent}",
+      "tab.unfocusedActiveBackground": "${colors.bg}",
+      "tab.unfocusedActiveModifiedBorder": "${colors.lightBlue}40",
+      "tab.unfocusedInactiveBackground": "${colors.bg}",
+      "tab.unfocusedInactiveForeground": "${colors.gray}80",
+      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",      
       "terminal.ansiBlack": "${colors.bg}",
       "terminal.ansiBlue": "${colors.lowerBlue}",
       "terminal.ansiBrightBlack": "${colors.gray}",
@@ -499,14 +469,6 @@ function schema({ colors, styles }) {
       "symbolIcon.typeParameterForeground": "${colors.gray}",
       "symbolIcon.unitForeground": "${colors.gray}",
       "symbolIcon.variableForeground": "${colors.lightBlue}",
-      "tab.activeModifiedBorder": "${colors.lightBlue}",
-      "tab.inactiveModifiedBorder": "${colors.lightBlue}80",
-      "tab.lastPinnedBorder": "${colors.transparent}",
-      "tab.unfocusedActiveBackground": "${colors.bg}",
-      "tab.unfocusedActiveModifiedBorder": "${colors.lightBlue}40",
-      "tab.unfocusedInactiveBackground": "${colors.bg}",
-      "tab.unfocusedInactiveForeground": "${colors.gray}80",
-      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",
       "terminal.border": "${colors.transparent}",
       "terminal.foreground": "${colors.gray}",
       "terminal.selectionBackground": "${colors.selection}",
@@ -1270,6 +1232,4 @@ module.exports.base = base
 module.exports.noitalics = noitalics
 module.exports.storm = storm
 module.exports.stormNoitalics = stormNoitalics
-module.exports.white = white
-module.exports.whiteNoitalics = whiteNoitalics
 module.exports.svg = svg
