@@ -152,13 +152,13 @@
       "terminal.ansiBrightBlue": "#ADD7FF",
       "terminal.ansiBrightCyan": "#ADD7FF",
       "terminal.ansiBrightGreen": "#5DE4c7",
-      "terminal.ansiBrightMagenta": "#FCC5E9",
+      "terminal.ansiBrightMagenta": "#f087bd",
       "terminal.ansiBrightRed": "#d0679d",
       "terminal.ansiBrightWhite": "#ffffff",
       "terminal.ansiBrightYellow": "#fffac2",
       "terminal.ansiCyan": "#89ddff",
       "terminal.ansiGreen": "#5DE4c7",
-      "terminal.ansiMagenta": "#FCC5E9",
+      "terminal.ansiMagenta": "#f087bd",
       "terminal.ansiRed": "#d0679d",
       "terminal.ansiWhite": "#ffffff",
       "terminal.ansiYellow": "#fffac2",
@@ -188,7 +188,7 @@
       "charts.green": "#5DE4c7",
       "charts.lines": "#a6accd80",
       "charts.orange": "#89ddff",
-      "charts.purple": "#FCC5E9",
+      "charts.purple": "#f087bd",
       "charts.red": "#d0679d",
       "charts.yellow": "#fffac2",
       "checkbox.background": "#1b1e28",
@@ -218,7 +218,7 @@
       "debugIcon.stopForeground": "#d0679d",
       "debugTokenExpression.boolean": "#89ddff",
       "debugTokenExpression.error": "#d0679d",
-      "debugTokenExpression.name": "#FCC5E9",
+      "debugTokenExpression.name": "#e4f0fb",
       "debugTokenExpression.number": "#5fb3a1",
       "debugTokenExpression.string": "#89ddff",
       "debugTokenExpression.value": "#a6accd99",
@@ -385,18 +385,18 @@
       "symbolIcon.classForeground": "#fffac2",
       "symbolIcon.colorForeground": "#a6accd",
       "symbolIcon.constantForeground": "#a6accd",
-      "symbolIcon.constructorForeground": "#FCC5E9",
+      "symbolIcon.constructorForeground": "#f087bd",
       "symbolIcon.enumeratorForeground": "#fffac2",
       "symbolIcon.enumeratorMemberForeground": "#ADD7FF",
       "symbolIcon.eventForeground": "#fffac2",
       "symbolIcon.fieldForeground": "#ADD7FF",
       "symbolIcon.fileForeground": "#a6accd",
       "symbolIcon.folderForeground": "#a6accd",
-      "symbolIcon.functionForeground": "#FCC5E9",
+      "symbolIcon.functionForeground": "#f087bd",
       "symbolIcon.interfaceForeground": "#ADD7FF",
       "symbolIcon.keyForeground": "#a6accd",
       "symbolIcon.keywordForeground": "#a6accd",
-      "symbolIcon.methodForeground": "#FCC5E9",
+      "symbolIcon.methodForeground": "#f087bd",
       "symbolIcon.moduleForeground": "#a6accd",
       "symbolIcon.namespaceForeground": "#a6accd",
       "symbolIcon.nullForeground": "#a6accd",
@@ -488,13 +488,25 @@
         }
       },
       {
-        "scope": ["keyword.operator.new"],
+        "scope": ["keyword.operator.new", "keyword.control.new"],
         "settings": {
           "foreground": "#5DE4c7"
         }
       },
       {
-        "scope": ["variable.language.super", "storage.modifier.async", "support.class.error", "keyword.control.trycatch", "keyword.operator.expression.delete", "keyword.operator.expression.void", "keyword.operator.void", "keyword.operator.delete"],
+        "scope": [
+          "variable.language.super", 
+          "storage.modifier.async", 
+          "support.class.error", 
+          "keyword.control.trycatch", 
+          "keyword.operator.expression.delete", 
+          "keyword.operator.expression.void", 
+          "keyword.operator.void", 
+          "keyword.operator.delete",
+          "constant.language.null",
+          "constant.language.boolean.false",
+          "constant.language.undefined"
+        ],
         "settings": {
           "foreground": "#d0679d"
         }
@@ -532,7 +544,7 @@
       {
         "scope": ["keyword.operator", "storage.type", "storage.modifier", "keyword.control.conditional", "keyword.control.loop"],
         "settings": {
-          "foreground": "#ADD7FF"
+          "foreground": "#91B4D5"
         }
       },
       {
@@ -578,41 +590,29 @@
         }
       },
       {
-        "scope": ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
+        "scope": ["support.class.component"],
         "settings": {
-          "foreground": "#e4f0fb"
-        }
-      },
-      {
-        "scope": [
-          "entity.name.tag",
-          "support.class.component",
-          "entity.name.tag",
-          "meta.tag.sgml",
-          "markup.deleted.git_gutter"
-        ],
-        "settings": {
-          "foreground": "#FCC5E9"
+          "foreground": "#f087bd"
         }
       },
       {
         "scope": ["entity.name.tag", "entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
         "settings": {
-          "foreground": "#FAE4FC"
+          "foreground": "#f087bd"
         }
       },
       {
         "name": "Function Call",
         "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
-          "foreground": "#FAE4FC"
+          "foreground": "#e4f0fb"
         }
       },
       {
         "name": "Function/Class Name",
         "scope": "entity.name.function, meta.class entity.name.class, meta.class entity.name.type.class, meta.class meta.function-call variable.function, keyword.other.important",
         "settings": {
-          "foreground": "#FCC5E9"
+          "foreground": "#ADD7FF"
         }
       },
       {
@@ -671,13 +671,13 @@
           "support.type.sys-types"
         ],
         "settings": {
-          "foreground": "#FAE4FC"
+          "foreground": "#91B4D5"
         }
       },
       {
         "scope": ["support.class", "support.constant", "variable.other.constant.object"],
         "settings": {
-          "foreground": "#FCC5E9"
+          "foreground": "#ADD7FF"
         }
       },
       {
@@ -702,7 +702,7 @@
       {
         "scope": ["variable.language"],
         "settings": {
-          "foreground": "#FCC5E9",
+          "foreground": "#ADD7FF",
           "fontStyle": ""
         }
       },
@@ -1033,7 +1033,7 @@
       {
         "scope": "token.debug-token",
         "settings": {
-          "foreground": "#FCC5E9"
+          "foreground": "#e4f0fb"
         }
       },
       {
