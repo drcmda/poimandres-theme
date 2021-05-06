@@ -12,7 +12,6 @@ const base = {
 
     hotRed: '#d0679d',
     pink: '#f087bd',
-    brighterPink: '#FAE4FC',
     gray: '#a6accd',
 
     darkerGray: '#767c9d',
@@ -320,13 +319,13 @@ function schema({ colors, styles }) {
       "listFilterWidget.background": "${colors.focus}",
       "listFilterWidget.noMatchesOutline": "${colors.hotRed}",
       "listFilterWidget.outline": "${colors.transparent}",
-      "list.activeSelectionBackground": "${colors.transparent}",
+      "list.activeSelectionBackground": "${colors.focus}80",
       "list.activeSelectionForeground": "${colors.offWhite}",
       "list.errorForeground": "${colors.hotRed}",
-      "list.focusBackground": "${colors.transparent}",
+      "list.focusBackground": "${colors.focus}80",
       "list.focusForeground": "${colors.gray}",
       "list.highlightForeground": "${colors.lowerMint}",
-      "list.hoverBackground": "${colors.transparent}",
+      "list.hoverBackground": "${colors.focus}80",
       "list.hoverForeground": "${colors.offWhite}",
       "list.inactiveSelectionBackground": "${colors.transparent}",
       "list.inactiveSelectionForeground": "${colors.offWhite}",
@@ -520,19 +519,25 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["variable.other.property", "variable.other", "support.type.object"],
+        "scope": ["variable.other", "support.type.object"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
       },
       {
-        "scope": ["meta.object.member"],
+        "scope": ["variable.other.object.property", "variable.other.property", "support.variable.property"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": ["entity.name.function.method", "string.unquoted", "meta.object.member"],
         "settings": {
           "foreground": "${colors.lightBlue}"
         }
       },
       {
-        "scope": ["variable - meta.import", "constant.other.placeholder", "variable.other.object.property", "meta.object-literal.key-meta.object.member"],
+        "scope": ["variable - meta.import", "constant.other.placeholder", "meta.object-literal.key-meta.object.member"],
         "settings": {
           "foreground": "${colors.offWhite}"
         }
@@ -551,8 +556,14 @@ function schema({ colors, styles }) {
       },
       {
         "scope": [
-          "variable.language.super", 
-          "storage.modifier.async", 
+          "variable.language.this", "storage.modifier.async", "storage.modifier", "variable.language.super"
+        ],
+        "settings": {
+          "foreground": "${colors.brightMint}"
+        }
+      },
+      {
+        "scope": [         
           "support.class.error", 
           "keyword.control.trycatch", 
           "keyword.operator.expression.delete", 
@@ -598,7 +609,7 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.operator", "storage.type", "storage.modifier", "keyword.control.conditional", "keyword.control.loop"],
+        "scope": ["keyword.operator", "storage.type"],
         "settings": {
           "foreground": "${colors.desaturatedBlue}"
         }
@@ -661,7 +672,7 @@ function schema({ colors, styles }) {
         "name": "Function Call",
         "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
-          "foreground": "${colors.offWhite}"
+          "foreground": "${colors.offWhite}d0"
         }
       },
       {
@@ -695,7 +706,6 @@ function schema({ colors, styles }) {
           "constant.language",
           "constant.other.symbol",
           "constant.other.key",
-          "entity.other.inherited-class",
           "markup.heading",
           "markup.inserted.git_gutter",
           "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
@@ -706,15 +716,27 @@ function schema({ colors, styles }) {
         }
       },
       {
+        "scope": ["entity.other.inherited-class"],
+        "settings": {
+          "foreground": "${colors.lightBlue}"
+        }
+      },
+      {
         "scope": ["meta.type.declaration"],
         "settings": {
           "foreground": "${colors.lightBlue}"
         }
       },
       {
-        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "scope": ["entity.name.type.alias"],
         "settings": {
           "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "settings": {
+          "foreground": "${colors.gray}C0"
         }
       },
       {

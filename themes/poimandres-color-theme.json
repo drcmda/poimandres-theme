@@ -264,13 +264,13 @@
       "listFilterWidget.background": "#303340",
       "listFilterWidget.noMatchesOutline": "#d0679d",
       "listFilterWidget.outline": "#00000000",
-      "list.activeSelectionBackground": "#00000000",
+      "list.activeSelectionBackground": "#30334080",
       "list.activeSelectionForeground": "#e4f0fb",
       "list.errorForeground": "#d0679d",
-      "list.focusBackground": "#00000000",
+      "list.focusBackground": "#30334080",
       "list.focusForeground": "#a6accd",
       "list.highlightForeground": "#5fb3a1",
-      "list.hoverBackground": "#00000000",
+      "list.hoverBackground": "#30334080",
       "list.hoverForeground": "#e4f0fb",
       "list.inactiveSelectionBackground": "#00000000",
       "list.inactiveSelectionForeground": "#e4f0fb",
@@ -464,19 +464,25 @@
         }
       },
       {
-        "scope": ["variable.other.property", "variable.other", "support.type.object"],
+        "scope": ["variable.other", "support.type.object"],
         "settings": {
           "foreground": "#e4f0fb"
         }
       },
       {
-        "scope": ["meta.object.member"],
+        "scope": ["variable.other.object.property", "variable.other.property", "support.variable.property"],
+        "settings": {
+          "foreground": "#e4f0fb"
+        }
+      },
+      {
+        "scope": ["entity.name.function.method", "string.unquoted", "meta.object.member"],
         "settings": {
           "foreground": "#ADD7FF"
         }
       },
       {
-        "scope": ["variable - meta.import", "constant.other.placeholder", "variable.other.object.property", "meta.object-literal.key-meta.object.member"],
+        "scope": ["variable - meta.import", "constant.other.placeholder", "meta.object-literal.key-meta.object.member"],
         "settings": {
           "foreground": "#e4f0fb"
         }
@@ -495,8 +501,14 @@
       },
       {
         "scope": [
-          "variable.language.super", 
-          "storage.modifier.async", 
+          "variable.language.this", "storage.modifier.async", "storage.modifier", "variable.language.super"
+        ],
+        "settings": {
+          "foreground": "#5DE4c7"
+        }
+      },
+      {
+        "scope": [         
           "support.class.error", 
           "keyword.control.trycatch", 
           "keyword.operator.expression.delete", 
@@ -542,7 +554,7 @@
         }
       },
       {
-        "scope": ["keyword.operator", "storage.type", "storage.modifier", "keyword.control.conditional", "keyword.control.loop"],
+        "scope": ["keyword.operator", "storage.type"],
         "settings": {
           "foreground": "#91B4D5"
         }
@@ -605,7 +617,7 @@
         "name": "Function Call",
         "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
         "settings": {
-          "foreground": "#e4f0fb"
+          "foreground": "#e4f0fbd0"
         }
       },
       {
@@ -639,7 +651,6 @@
           "constant.language",
           "constant.other.symbol",
           "constant.other.key",
-          "entity.other.inherited-class",
           "markup.heading",
           "markup.inserted.git_gutter",
           "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
@@ -650,15 +661,27 @@
         }
       },
       {
+        "scope": ["entity.other.inherited-class"],
+        "settings": {
+          "foreground": "#ADD7FF"
+        }
+      },
+      {
         "scope": ["meta.type.declaration"],
         "settings": {
           "foreground": "#ADD7FF"
         }
       },
       {
-        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "scope": ["entity.name.type.alias"],
         "settings": {
           "foreground": "#a6accd"
+        }
+      },
+      {
+        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "settings": {
+          "foreground": "#a6accdC0"
         }
       },
       {
