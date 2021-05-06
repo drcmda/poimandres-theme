@@ -188,7 +188,7 @@ function schema({ colors, styles }) {
       "statusBar.background": "${colors.bg}",
       "statusBar.foreground": "${colors.gray}",
       "statusBar.noFolderBackground": "${colors.bg}",
-      "tab.activeBackground": "${colors.focus}60",
+      "tab.activeBackground": "${colors.focus}80",
       "tab.activeForeground": "${colors.offWhite}",
       "tab.border": "${colors.transparent}",
       "tab.inactiveBackground": "${colors.bg}",
