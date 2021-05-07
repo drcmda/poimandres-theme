@@ -545,7 +545,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["keyword.control.flow"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.brightMint}c0"
         }
       },
       {
@@ -659,13 +659,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["support.class.component"],
         "settings": {
-          "foreground": "${colors.pink}"
+          "foreground": "${colors.brightMint}"
         }
       },
       {
         "scope": ["entity.name.tag", "entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
         "settings": {
-          "foreground": "${colors.pink}"
+          "foreground": "${colors.brightMint}"
         }
       },
       {

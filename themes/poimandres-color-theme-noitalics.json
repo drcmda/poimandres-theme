@@ -490,7 +490,7 @@
       {
         "scope": ["keyword.control.flow"],
         "settings": {
-          "foreground": "#5DE4c7"
+          "foreground": "#5DE4c7c0"
         }
       },
       {
@@ -604,13 +604,13 @@
       {
         "scope": ["support.class.component"],
         "settings": {
-          "foreground": "#f087bd"
+          "foreground": "#5DE4c7"
         }
       },
       {
         "scope": ["entity.name.tag", "entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
         "settings": {
-          "foreground": "#f087bd"
+          "foreground": "#5DE4c7"
         }
       },
       {
