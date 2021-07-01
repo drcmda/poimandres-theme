@@ -12,7 +12,7 @@ exports.decorateConfig = (config) =>
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
-    borderColor: '#222430',
+    borderColor: 'transparent',
     cursorColor: '#97979b',
     cursorAccentColor: backgroundColor,
     selectionColor: '#717cb425',
