@@ -1,5 +1,5 @@
 {
-  "name": "pmndrs",
+  "name": "hyper-pmndrs",
   "icon": "assets/pmndrs.png",
   "displayName": "poimandres",
   "description": "poimandres dark theme",
@@ -10,6 +10,9 @@
     "vsc",
     "dark",
     "theme"
+  ],
+  "files": [
+    "index.js"
   ],
   "scripts": {
     "dev": "node src/watcher"
