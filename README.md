@@ -37,3 +37,9 @@ Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js`
 
 [poimandres-alacritty]: https://github.com/z0al/poimandres-alacritty
 [poimandres-iterm]: https://github.com/alii/poimandres-iterm
+
+### Hyper theme
+
+```bash
+hyper i hyper-pmndrs
+```
