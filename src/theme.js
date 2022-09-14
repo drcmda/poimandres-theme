@@ -331,7 +331,7 @@ function schema({ colors, styles }) {
       "list.inactiveSelectionForeground": "${colors.offWhite}",
       "menu.background": "${colors.bg}",
       "menu.foreground": "${colors.offWhite}",
-      "menu.selectionBackground": "${colors.transparent}",
+      "menu.selectionBackground": "${colors.focus}",
       "menu.selectionForeground": "${colors.bluishGrayBrighter}",
       "menu.separatorBackground": "${colors.darkerGray}",
       "menubar.selectionBackground": "${colors.selection}",

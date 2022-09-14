@@ -276,7 +276,7 @@
       "list.inactiveSelectionForeground": "#e4f0fb",
       "menu.background": "#252b37",
       "menu.foreground": "#e4f0fb",
-      "menu.selectionBackground": "#00000000",
+      "menu.selectionBackground": "#404350",
       "menu.selectionForeground": "#7390AA",
       "menu.separatorBackground": "#868cad",
       "menubar.selectionBackground": "#818cc425",
