@@ -34,9 +34,11 @@ Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js`
 
 - [poimandres-alacritty][poimandres-alacritty]: Alacritty version
 - [poimandres-iterm][poimandres-iterm]: Iterm version
+- [poimandres-kitty][poimandres-kitty]: Kitty version
 
 [poimandres-alacritty]: https://github.com/z0al/poimandres-alacritty
 [poimandres-iterm]: https://github.com/alii/poimandres-iterm
+[poimandres-kitty]: https://github.com/guilhermedeandrade/poimandres-kitty
 
 ### Hyper theme
 
