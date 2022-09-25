@@ -327,7 +327,7 @@ function schema({ colors, styles }) {
       "list.highlightForeground": "${colors.lowerMint}",
       "list.hoverBackground": "${colors.focus}80",
       "list.hoverForeground": "${colors.offWhite}",
-      "list.inactiveSelectionBackground": "${colors.transparent}",
+      "list.inactiveSelectionBackground": "${colors.focus}80",
       "list.inactiveSelectionForeground": "${colors.offWhite}",
       "menu.background": "${colors.bg}",
       "menu.foreground": "${colors.offWhite}",
