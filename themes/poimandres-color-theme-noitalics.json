@@ -168,7 +168,7 @@
       "titleBar.activeForeground": "#a6accd",
       "titleBar.inactiveBackground": "#1b1e28",
       "titleBar.inactiveForeground": "#767c9d",
-      "tree.indentGuidesStroke": "#00000000",
+      "tree.indentGuidesStroke": "#303340",
       "widget.shadow": "#00000030",
       "activityBar.activeBorder": "#a6accd",
       "activityBar.dropBorder": "#a6accd",

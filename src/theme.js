@@ -223,7 +223,7 @@ function schema({ colors, styles }) {
       "titleBar.activeForeground": "${colors.gray}",
       "titleBar.inactiveBackground": "${colors.bg}",
       "titleBar.inactiveForeground": "${colors.darkerGray}",
-      "tree.indentGuidesStroke": "${colors.transparent}",
+      "tree.indentGuidesStroke": "${colors.focus}",
       "widget.shadow": "${colors.black}30",
       "activityBar.activeBorder": "${colors.gray}",
       "activityBar.dropBorder": "${colors.gray}",
