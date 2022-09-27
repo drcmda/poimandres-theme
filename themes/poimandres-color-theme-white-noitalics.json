@@ -272,7 +272,7 @@
       "list.highlightForeground": "#62AA9B",
       "list.hoverBackground": "#00000000",
       "list.hoverForeground": "#3b3e48",
-      "list.inactiveSelectionBackground": "#00000000",
+      "list.inactiveSelectionBackground": "#30334080",
       "list.inactiveSelectionForeground": "#3b3e48",
       "menu.background": "#FEFEFF",
       "menu.foreground": "#3b3e48",
