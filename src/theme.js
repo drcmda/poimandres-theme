@@ -648,8 +648,6 @@ function schema({ colors, styles }) {
           "punctuation.definition.tag",
           "punctuation.separator.inheritance.php",
           "punctuation.definition.tag.html",
-          "punctuation.definition.tag.begin.html",
-          "punctuation.definition.tag.end.html",
           "punctuation.section.embedded",
           "keyword.other.template",
           "keyword.other.substitution",
@@ -657,6 +655,12 @@ function schema({ colors, styles }) {
         ],
         "settings": {
           "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": ["punctuation.definition.tag.begin.html", "punctuation.definition.tag.end.html"],
+        "settings": {
+          "foreground": "${colors.gray}"
         }
       },
       {
@@ -711,11 +715,16 @@ function schema({ colors, styles }) {
           "constant.other.key",
           "markup.heading",
           "markup.inserted.git_gutter",
-          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-          "text.html.derivative"
+          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
         ],
         "settings": {
           "foreground": "${colors.brightMint}"
+        }
+      },
+      {
+        "scope": ["text.html.derivative"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
         }
       },
       {
