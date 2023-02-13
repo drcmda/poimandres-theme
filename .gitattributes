@@ -1,3 +1,5 @@
 # Set default behavior to automatically normalize line endings.
 * text=auto
 
+# Define file languages for GitHub syntax highlighting and code stats.
+/.prettierrc linguist-language=JSON
