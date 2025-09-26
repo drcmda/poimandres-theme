@@ -37,12 +37,14 @@ Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js`
 - [poimandres-kitty][poimandres-kitty]: Kitty version
 - [poimandres-nvim][poimandres-nvim]: Neovim version
 - [poimandres-jetbrains][poimandres-jetbrains]: JetBrains version
+- [poimandres-obsidian][poimandres-obsidian]: Obsidian version (extended)
 
 [poimandres-alacritty]: https://github.com/z0al/poimandres-alacritty
 [poimandres-iterm]: https://github.com/alii/poimandres-iterm
 [poimandres-kitty]: https://github.com/guilhermedeandrade/poimandres-kitty
 [poimandres-nvim]: https://github.com/olivercederborg/poimandres.nvim
 [poimandres-jetbrains]: https://github.com/marko-mihajlovic/poimandres-jetbrains
+[poimandres-obsidian]: https://github.com/bastiangx/poimandres.obsidian
 
 ### Hyper theme
 
