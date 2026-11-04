@@ -69,4 +69,4 @@ The filename is the theme name, so select `pmndrs` in `~/.config/opencode/cli.js
 }
 ```
 
-Backgrounds are transparent by design, so the theme blends with your terminal background instead of forcing its own.
+Backgrounds are transparent by design, so the theme blends with your terminal background instead of forcing its own. Floating surfaces — menus, dialogs, panels and toasts — use the solid `background.raised` ramp (gray 700/600/500) so they stay readable over content; only `background.base` is transparent.
