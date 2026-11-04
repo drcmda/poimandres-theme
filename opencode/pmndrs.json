@@ -54,8 +54,8 @@
       "base": "transparent",
       "raised": {
         "base": "transparent",
-        "high": "transparent",
-        "max": "transparent"
+        "high": "$hue.neutral.700",
+        "max": "$hue.neutral.600"
       },
       "action": {
         "primary": {
