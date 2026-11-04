@@ -15,7 +15,8 @@
     "index.js"
   ],
   "scripts": {
-    "dev": "node src/watcher"
+    "dev": "node src/watcher",
+    "opencode:preview": "node opencode/preview.mjs"
   },
   "author": "Paul Henschel",
   "publisher": "pmndrs",

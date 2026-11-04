@@ -70,3 +70,12 @@ The filename is the theme name, so select `pmndrs` in `~/.config/opencode/cli.js
 ```
 
 Backgrounds are transparent by design, so the theme blends with your terminal background instead of forcing its own. Menus and dialogs are the exception: OpenCode has no separate menu token, they read `background.raised` — which the prompt box and code blocks also read — so the solid panel comes from the `@dialog` overrides instead (gray 800 body, 700/600 for rows and hover), leaving everything else flat.
+
+![opencode pmndrs theme](assets/opencode.png)
+
+The sample above is 80x24 and generated from the theme file, so it stays honest when the palette changes:
+
+```bash
+npm run opencode:preview          # prints it with truecolor escape codes
+node opencode/preview.mjs         # same thing, any theme file: node opencode/preview.mjs other.json
+```
