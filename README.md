@@ -49,3 +49,24 @@ Go to `Run and Debug`, click the ▶ icon, any change you make in `src/theme.js`
 ```bash
 hyper i hyper-pmndrs
 ```
+
+### OpenCode theme
+
+The [OpenCode](https://opencode.ai) TUI theme lives in [`opencode/pmndrs.json`](opencode/pmndrs.json). Copy it into your global themes directory:
+
+```bash
+cp opencode/pmndrs.json ~/.config/opencode/themes/
+```
+
+The filename is the theme name, so select `pmndrs` in `~/.config/opencode/cli.json` (or run `/themes`):
+
+```json
+{
+  "theme": {
+    "name": "pmndrs",
+    "mode": "dark"
+  }
+}
+```
+
+Backgrounds are transparent by design, so the theme blends with your terminal background instead of forcing its own.
