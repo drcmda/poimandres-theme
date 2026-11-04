@@ -69,7 +69,7 @@ The filename is the theme name, so select `pmndrs` in `~/.config/opencode/cli.js
 }
 ```
 
-Backgrounds are transparent by design, so the theme blends with your terminal background instead of forcing its own. Menus and dialogs are the exception: OpenCode has no separate menu token, they read `background.raised` — which the prompt box and code blocks also read — so the solid panel comes from the `@dialog` overrides instead (gray 800 body, 700/600 for rows and hover), leaving everything else flat.
+Only `background.base` is transparent, so the transcript sits on your own terminal background. Everything drawn on top of it — prompt box, tab strip, menus, dialogs, toasts, code blocks — uses the solid `raised` ramp (gray 800 / 700 / 600). OpenCode has no separate menu token: right-click menus and the prompt box read the same ramp, so they cannot be styled apart — a menu is only solid if the prompt box is. Dialogs and pickers additionally go through `@dialog`, which pulls the focus fill to neutral.500 and keeps light text on the active row.
 
 ![opencode pmndrs theme](assets/opencode.png)
 

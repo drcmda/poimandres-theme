@@ -72,11 +72,11 @@ const lines = [
   `${bg('diff.lineNumber.background.removed')}${fg('diff.highlight.removed')}${pad(' highlight removed', 40)}${R}${bg('diff.lineNumber.background.added')}${fg('diff.highlight.added')}${pad(' highlight added', 40)}${R}`,
   '',
   `${ink('# markdown heading', 'markdown.heading')}  ${ink('[link]', 'markdown.link')}  ${ink('`code`', 'markdown.code')}  ${ink('> quote', 'markdown.blockQuote')}  ${ink('**strong**', 'markdown.strong')}`,
-  `${bg('hue.neutral.700')}${fg('text.base')}  700 raised  ${R}${bg('hue.neutral.600')}${fg('text.base')}  600 hover  ${R}${bg('hue.neutral.500')}${fg('text.base')}  500 focus  ${R} ${ink('dialog body is solid 800', 'text.muted')}`,
+  `${bg('background.raised.base')}${fg('text.base')} 800 raised ${R}${bg('background.raised.high')}${fg('text.base')} 700 hover ${R}${bg('background.raised.max')}${fg('text.base')} 600 max ${R} ${ink('menus, dialogs, toasts, prompt', 'text.muted')}`,
   `${ink('error', 'text.feedback.error.base')}  ${ink('warning', 'text.feedback.warning.base')}  ${ink('success', 'text.feedback.success.base')}  ${ink('info', 'text.feedback.info.base')}  ${ink('feedback', 'text.muted')}`,
   '',
   ink('─'.repeat(80), 'border.base'),
-  `${ink('background.base transparent · raised transparent · dialogs solid gray 800', 'hue.neutral.400')}`,
+  `${ink('background.base transparent over your terminal · raised 800/700/600 solid', 'hue.neutral.400')}`,
 ]
 
 process.stdout.write(lines.map((l) => `${l}${R}\r\n`).join('').slice(0, -2))

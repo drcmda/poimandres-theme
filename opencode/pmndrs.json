@@ -53,7 +53,7 @@
     "background": {
       "base": "transparent",
       "raised": {
-        "base": "transparent",
+        "base": "$hue.neutral.800",
         "high": "$hue.neutral.700",
         "max": "$hue.neutral.600"
       },
