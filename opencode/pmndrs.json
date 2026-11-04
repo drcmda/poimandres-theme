@@ -53,16 +53,16 @@
     "background": {
       "base": "transparent",
       "raised": {
-        "base": "$hue.neutral.700",
-        "high": "$hue.neutral.600",
-        "max": "$hue.neutral.500"
+        "base": "transparent",
+        "high": "transparent",
+        "max": "transparent"
       },
       "action": {
         "primary": {
           "base": "transparent",
-          "$hovered": "$hue.neutral.500",
+          "$hovered": "$hue.neutral.700",
           "$focused": "$hue.interactive.200",
-          "$selected": "$hue.neutral.500"
+          "$selected": "transparent"
         },
         "secondary": {
           "base": "transparent"
@@ -147,11 +147,25 @@
       "codeBlock": "$hue.neutral.200"
     },
     "@dialog": {
-      "background": {
-        "base": "$background.raised.base",
+      "text": {
         "action": {
           "primary": {
-            "$hovered": "$background.raised.high"
+            "$focused": "$hue.neutral.100"
+          }
+        }
+      },
+      "background": {
+        "base": "$hue.neutral.800",
+        "raised": {
+          "base": "$hue.neutral.800",
+          "high": "$hue.neutral.700",
+          "max": "$hue.neutral.600"
+        },
+        "action": {
+          "primary": {
+            "$hovered": "$hue.neutral.700",
+            "$focused": "$hue.neutral.500",
+            "$selected": "$hue.neutral.600"
           }
         }
       }
